@@ -1,7 +1,7 @@
 ## Field course 2019
 
 ###  School of Biological Sciences, UoB - 2019
-Go to the [course oficial website](http://gtpb.igc.gulbenkian.pt/bicourses/2019/PGDH19/)
+
 
 ---
 
