@@ -15,7 +15,7 @@ If they are not installed you need to open R and
 2. select repositories, and accept the default it suggests
 3. select packages, choose *ape* and also choose *phyclust*
 
-Also, you can type:
+Or you can type:
 ```R
 install.packages(c("phyclust", "ape"))
 ```
@@ -49,20 +49,29 @@ plot_ms_tree(10, "-T -G 1000")
 plot_ms_tree(100,"-T -G -2.119 -eG 2.5 0.0")
 ```
 
-The second script allows you to simulate structured populations and works differently
+The second script allows you to simulate structured populations and works differently.
 
 Type:
 ```R
 source("plot_ms_trees_mig.R")
 ```
-It should plot a tree with two colors corresponding to two populations.
+This will import the function *plot_ms_tree_mig()*
+This function has two parameters:
+* The number of haploid samples per population
+* scaled migration parameter *4Nm*
+* The ms options for structured populations
 
-Open/Edit the **ms** command (change the migration rate for instance) and save your changes.
 
-Type again:
 ```R
-source("plot_ms_trees_mig.R")
+plot_ms_tree(c(10, 10), 10)
 ```
+
+It should plot a tree with two colors corresponding to two populations. The ms command here is for 20 individuals 2 demes with 10 samples from each, and symmetrical migration with 4*Nm* = 10. The colours correspond to the different demes from which the genes were sampled.
+
+Try change the migration rate for instance (0.1). You can also increase the number of populations and sample sizes.
+If you are brave enough, try to change the ms options. By **ms** command now is ```ms nsam nreps -T -I npop n1 n2 ... [4*Nm*]```
+
+
 
 <br/>
 
