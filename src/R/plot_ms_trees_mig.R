@@ -33,7 +33,3 @@ plot_ms_tree = function(sample_vec, mig)
 }
 
 
-res1 = plot_ms_tree(c(5, 5, 5), 1)
-#the ms command here is for 20 individuals 2 demes with 10 samples from each, and symmetrical migration with 4Nm = 10. 
-#The colours correspond to the different demes from which the genes were sampled.
-#try also 4Nm=0.1
