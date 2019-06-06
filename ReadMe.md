@@ -1,6 +1,6 @@
-## PGDH19 - Population Genetics Demographic History: model-based approaches
+## Field course 2019
 
-###  Instituto Gulbenkian de Ciência (IGC) - Oeiras, Portugal - May 13<sup>th</sup> - May 17<sup>th</sup> 2019
+###  School of Biological Sciences, UoB - 2019
 Go to the [course oficial website](http://gtpb.igc.gulbenkian.pt/bicourses/2019/PGDH19/)
 
 ---
