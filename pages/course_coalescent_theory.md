@@ -14,6 +14,6 @@ title: Coalescent Theory
 
 ### Back
 
-Back to [Day #1](./Day1_coalescent.md).
+Back to [Day #1](./coalescent.md).
 
 Back to [first page](../index.md).
