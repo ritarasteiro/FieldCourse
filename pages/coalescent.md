@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Day 1 - Coalescent theory
+title: Coalescent theory
 ---
 
 * [The basics of inference in population genetics: Wright Fisher and the coalescent](../assets/Wright-Fisher_model_and_Kingman's_coalescent.pdf)
