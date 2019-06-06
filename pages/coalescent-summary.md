@@ -25,7 +25,7 @@ If you had genetic data from many independent markers, would you be able to dete
 
 ### Back
 
-Back to [Coalescent](./Coalescent.md).  
+Back to [Coalescent](./coalescent.md).  
 Back to [first page](../index.md).
 
 
