@@ -53,7 +53,7 @@ The second script allows you to simulate structured populations and works differ
 
 Type:
 ```R
-source(“plot_ms_trees_mig.R”)
+source("plot_ms_trees_mig.R")
 ```
 It should plot a tree with two colors corresponding to two populations.
 
@@ -61,7 +61,7 @@ Open/Edit the **ms** command (change the migration rate for instance) and save y
 
 Type again:
 ```R
-source(“plot_ms_trees_mig.R”)
+source("plot_ms_trees_mig.R")
 ```
 
 <br/>
@@ -74,7 +74,7 @@ There are two scripts:
 
 Type:
 ```R
-source(“CoalTreesSimulation.R”)
+source("CoalTreesSimulation.R")
 ```
 
 Then you can open the file *CoalTreesSimulation.R* in a text editor and modify some of the parameters to see what happens.
@@ -83,5 +83,5 @@ Then you can open the file *CoalTreesSimulation.R* in a text editor and modify s
 
 ### Back
 
-Back to [Day #1](./Day1_coalescent.md).   
+Back to [Coalescent](./coalescent.md).   
 Back to [first page](../index.md).
