@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Day 3 - Demographic Inference in Population Genetics 2
+title: PCADAPT
 ---
 
 * [Introduction to pcacapt](../assets/pcadapt_intro.pdf)
