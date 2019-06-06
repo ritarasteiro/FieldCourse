@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Day 1 Summary
+title: Summary
 ---
 
-## Day #1. The basics of inference in population genetics: Wright Fisher and the coalescent
+## The basics of inference in population genetics: Wright Fisher and the coalescent
 
 ### SUMMARY
 * Introduced the WF model
@@ -25,7 +25,7 @@ If you had genetic data from many independent markers, would you be able to dete
 
 ### Back
 
-Back to [Day #2](./Day2_DemogInf1.md).  
+Back to [Coalescent](./Coalescent.md).  
 Back to [first page](../index.md).
 
 
