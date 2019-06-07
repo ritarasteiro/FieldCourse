@@ -46,16 +46,19 @@ Read this file in:
 ```R
 pcadapt.position <- scan("positions.txt")
 ```
-
+---
+**NOTE**
 Unfortunately, if you are interested in the identity of particular SNPs, this is not very informative because it throws out chromosome or scaffold information that is useful for consulting genebank
 
+<br/>
 
 So you can use **plink** (many options). I just use the option below (but many other alternatives available – see the plink 1.9 manual online).
 
 ```
 ./plink --vcf wolf.vcf --chr-set 38 --recode --out plinkfile
 ```
-
+---
+<br/>
 
 Then you can read in
 ```R
