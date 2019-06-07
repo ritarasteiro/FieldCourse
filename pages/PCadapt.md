@@ -4,7 +4,7 @@ title: PCADAPT
 ---
 
 * [Introduction to pcacapt](../assets/pcadapt_intro.pdf)
-* [Practical pcadapt](../assets/pcadapt_practicals.zip)
+* [Practical pcadapt](../assets/PCAdapt_praticals.md)
 
 <br/>
 
