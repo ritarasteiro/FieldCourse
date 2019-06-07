@@ -30,8 +30,7 @@ Type:
 ```R
 source(“plot_ms_trees_single_pop.R”)
 ```
-This will import the function *plot_ms_tree()*
-This function has two parameters:
+This will import the function ```plot_ms_tree()```. This function has two parameters:
 * The number of haploid samples
 * The ms options for a single pop
 
@@ -55,9 +54,7 @@ Type:
 ```R
 source("plot_ms_trees_mig.R")
 ```
-This will import the function ```plot_ms_tree_mig()```.
-
-This function has two parameters:
+This will import the function ```plot_ms_tree_mig()```. This function has two parameters:
 * The number of haploid samples per population
 * scaled migration parameter *4Nm*
 
