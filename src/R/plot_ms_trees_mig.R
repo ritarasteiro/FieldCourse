@@ -5,7 +5,7 @@ library(phyclust) #this contains ms (Hudsons program)
 # need phyclust and ape libraries
 # library(phyclust);
 # library(ape);
-plot_ms_tree = function(sample_vec, mig, ms_options)
+plot_ms_tree = function(sample_vec, mig)
 {
   # Run the ms command
   nsamples = as.integer(sum(sample_vec))
