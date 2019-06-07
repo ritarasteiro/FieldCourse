@@ -60,6 +60,7 @@ So you can use **plink** (many options). I just use the option below (but many o
 
 
 <br/>
+
 Then you can read in **R**
 
 ```R
