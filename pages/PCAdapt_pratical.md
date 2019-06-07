@@ -92,7 +92,7 @@ raw.data= bed2matrix(fname)
 ```
 so that
 ```R
-> dim(raw.data)
+dim(raw.data)
 [1]   107 13092
 ```
 This gives a PCA plot:
