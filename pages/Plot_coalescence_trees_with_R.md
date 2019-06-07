@@ -48,6 +48,7 @@ plot_ms_tree(10, "-T -G 1000")
 plot_ms_tree(100,"-T -G -2.119 -eG 2.5 0.0")
 ```
 
+
 The second script allows you to simulate structured populations and works differently.
 
 Type:
@@ -57,6 +58,7 @@ source("plot_ms_trees_mig.R")
 This will import the function ```plot_ms_tree_mig()```. This function has two parameters:
 * The number of haploid samples per population
 * scaled migration parameter *4Nm*
+
 
 
 ```R
