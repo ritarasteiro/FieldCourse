@@ -46,7 +46,8 @@ Read this file in:
 ```R
 pcadapt.position <- scan("positions.txt")
 ```
----
+>
+
 **NOTE**
 
 Unfortunately, if you are interested in the identity of particular SNPs, this is not very informative because it throws out chromosome or scaffold information that is useful for consulting genebank
