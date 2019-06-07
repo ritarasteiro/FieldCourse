@@ -61,6 +61,7 @@ So you can use **plink** (many options). I just use the option below (but many o
 
 <br/>
 Then you can read in **R**
+
 ```R
 position.details = read.table("plinkfile.map")
 ```
@@ -80,6 +81,7 @@ A tutorial for running **pcadapt** is to be found using
 ```R
 vignette(“pcadapt”)
 ```
+<br/>
 
 If we use, say, *K=10*, we can get a scree plot, and then can revise value of K (make sure you use upper case *K*)
 ```R
