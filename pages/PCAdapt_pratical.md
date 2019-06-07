@@ -1,6 +1,6 @@
 ---
 layout: page
-title: pcadapt praticals
+title: pratical pcadapt
 ---
 
 
