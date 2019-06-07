@@ -11,7 +11,7 @@ title: Plotting coalescent trees using R
 
 If they are not installed you need to open R and
 
-1. set Cran Mirror, and choose one e.g. Bristol/Toulouse/ (but not https)
+1. set Cran Mirror, and choose one e.g. Bristol/ (but not https)
 2. select repositories, and accept the default it suggests
 3. select packages, choose *ape* and also choose *phyclust*
 
@@ -59,7 +59,6 @@ This will import the function *plot_ms_tree_mig()*
 This function has two parameters:
 * The number of haploid samples per population
 * scaled migration parameter *4Nm*
-* The ms options for structured populations
 
 
 ```R
@@ -68,8 +67,10 @@ plot_ms_tree(c(10, 10), 10)
 
 It should plot a tree with two colors corresponding to two populations. The ms command here is for 20 individuals 2 demes with 10 samples from each, and symmetrical migration with 4*Nm* = 10. The colours correspond to the different demes from which the genes were sampled.
 
+The **ms** command running in the function is ```ms nsam nreps -T -I npop n1 n2 ... 4*Nm*```. In the example above correspond to ```ms 20 1 -T -I 2 10 10 10```.
+
 Try change the migration rate for instance (0.1). You can also increase the number of populations and sample sizes.
-If you are brave enough, try to change the ms options. By **ms** command now is ```ms nsam nreps -T -I npop n1 n2 ... [4*Nm*]```
+
 
 
 
