@@ -114,7 +114,7 @@ plot(test1,option="scores",pop=poplist.names)
 The following shows a plot of the –log10 pvalues. 
 ```R
 plot(test1,option="manhattan")
-```R
+```
 
 To look at, for example, the  SNPs with –log10 p-values > 15 :
 ```R
