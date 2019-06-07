@@ -3,7 +3,7 @@ layout: page
 title: pratical pcadapt
 ---
 
-
+All the data needed to this pratical can be found in [pcadapt_practicals.zip](../assets/pcadapt_practicals.zip)
 
 
 ## Instructions for analysing wolf genomic data using the pcadapt package
