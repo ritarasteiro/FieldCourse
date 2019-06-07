@@ -3,7 +3,7 @@ layout: page
 title: Coalescent theory
 ---
 
-* [Simulating & plotting coalescent genealogies online](https://phytools.shinyapps.io/coalescent-plot/)
+* [Visual Wright-Fisher Simulation](WFsimulation.html) (Many thanks to Willy Rodriguez for the code)
 * [Simulating & plotting coalescent trees using R](Plot_coalescence_trees_with_R.md)
 * [ms documentation](../data/msdoc.pdf)
 * [ms distribution](../data/ms.zip)
