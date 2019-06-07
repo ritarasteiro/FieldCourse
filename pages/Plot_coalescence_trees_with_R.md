@@ -65,9 +65,9 @@ This function has two parameters:
 plot_ms_tree(c(10, 10), 10)
 ```
 
-It should plot a tree with two colors corresponding to two populations. The ms command here is for 20 individuals 2 demes with 10 samples from each, and symmetrical migration with 4*Nm* = 10. The colours correspond to the different demes from which the genes were sampled.
+It should plot a tree with two colors corresponding to two populations. The ms command here is for 20 individuals, 2 demes with 10 samples from each, and symmetrical migration with 4*Nm* = 10. The colours correspond to the different demes from which the genes were sampled.
 
-The **ms** command running in the function is ```ms nsam nreps -T -I npop n1 n2 ... 4*Nm*```. In the example above correspond to ```ms 20 1 -T -I 2 10 10 10```.
+The **ms** command running behind the *plot_ms_tree_mig()* function is ```ms nsam nreps -T -I npop n1 n2 ... 4*Nm*```. In the example above it corresponds to ```ms 20 1 -T -I 2 10 10 10```.
 
 Try change the migration rate for instance (0.1). You can also increase the number of populations and sample sizes.
 
