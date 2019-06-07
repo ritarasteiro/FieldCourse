@@ -27,6 +27,7 @@ which gives some context.
 You can either download the vcf file from here, but I have already done this in ``wolf.vcf``
 You will also need some individual descriptor information which is available in the file ``AllSamples_n107_EnvData_wLatLong_toUpload.csv`` (converted to .csv from the relevant file in Dryad).
 
+
 ### Reading vcf data into pcadapt
 
 ```R
@@ -48,11 +49,13 @@ pcadapt.position <- scan("positions.txt")
 
 Unfortunately, if you are interested in the identity of particular SNPs, this is not very informative because it throws out chromosome or scaffold information that is useful for consulting genebank
 
+
 So you can use **plink** (many options). I just use the option below (but many other alternatives available – see the plink 1.9 manual online).
 
 ```
 ./plink --vcf wolf.vcf --chr-set 38 --recode --out plinkfile
 ```
+
 
 Then you can read in
 ```R
@@ -103,6 +106,7 @@ This gives a PCA plot:
 ```R
 plot(test1,option="scores")
 ```
+
 ### Displaying the population information
 
 We can plot with points coloured by population of origin.
@@ -113,6 +117,7 @@ poplist.names = descript[,4] #fourth column contains the population names
 
 plot(test1,option="scores",pop=poplist.names)
 ```
+
 ### Evidence of selection
 
 The following shows a plot of the –log10 pvalues.
@@ -129,10 +134,11 @@ We can see what principal component they have the highest correlation with by:
 ```R
 get.pc(test1,signif)
 ```
+
 We can look at the distribution of the allele types on the PCA plot associated with this high scoring SNP.
 For example the first SNP (position 10715 among the SNPs – note, not position in the genome) correlates with PC2. So we might hope to see some difference in the distribution of genotypes for this SNP in the PCA plot.
 
-We can look at this from the raw pca data kept in the test1 object, and the genotype info we have stored in raw.data:
+We can look at this from the raw pca data kept in the ``test1`` object, and the genotype info we have stored in raw.data:
 ```R
 plot(test1$scores[,1],test1$scores[,2],col=raw.data[,10715]+1,pch=16)
 ```
@@ -143,4 +149,11 @@ We can then further investigate the details of this SNP using genebank. To do th
 The link above will take you directly to the genome of the dog. Choose the chromosome you want, and then search for the nucleotide you want in the search window, and then find nearby genes.
 
 
+
 <br/>
+
+### Back
+
+Back to [pcadapt](./PCadapt.md).   
+Back to [first page](../index.md).
+
