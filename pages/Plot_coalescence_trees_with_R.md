@@ -55,7 +55,8 @@ Type:
 ```R
 source("plot_ms_trees_mig.R")
 ```
-This will import the function ```plot_ms_tree_mig()```
+This will import the function ```plot_ms_tree_mig()```.
+
 This function has two parameters:
 * The number of haploid samples per population
 * scaled migration parameter *4Nm*
