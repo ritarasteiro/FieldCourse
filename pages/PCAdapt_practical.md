@@ -141,3 +141,6 @@ We can then further investigate the details of this SNP using genebank. To do th
 [Dog genome (CanFam3.1)](https://www.ncbi.nlm.nih.gov/genome/gdv/browser/?context=genome&acc=GCF_000002285.3)
 
 The link above will take you directly to the genome of the dog. Choose the chromosome you want, and then search for the nucleotide you want in the search window, and then find nearby genes.
+
+
+<br/>
