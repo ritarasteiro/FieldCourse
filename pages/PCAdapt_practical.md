@@ -47,7 +47,7 @@ Read this file in:
 pcadapt.position <- scan("positions.txt")
 ```
 >
-
+----------------------------------------------------------
 **NOTE**
 
 Unfortunately, if you are interested in the identity of particular SNPs, this is not very informative because it throws out chromosome or scaffold information that is useful for consulting genebank
@@ -76,7 +76,8 @@ and
 ```R
 chrom.pos = position.detail[,4]
 ```
----
+-----------------------------------------------------------
+
 <br/>
 
 A tutorial for running **pcadapt** is to be found using
