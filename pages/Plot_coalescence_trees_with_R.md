@@ -2,8 +2,7 @@
 layout: page
 title: Plotting coalescent trees using R
 ---
-
-## Plotting coalescent trees using R (MAB scripts)
+## Plotting coalescent trees using R
 
 ### In order to work the scripts require two packages:
 * ape
@@ -73,23 +72,6 @@ Try change the migration rate for instance (0.1). You can also increase the numb
 
 
 
-
-<br/>
-
-## Plotting average trees using R (WR script)
-
-There are two scripts:
-* [CoalTreesSimulation.R](../src/R/CoalTreesSimulation.R)
-* [extra_functions.R](../src/R/extra_functions.R)
-
-Type:
-```R
-source("CoalTreesSimulation.R")
-```
-
-Then you can open the file *CoalTreesSimulation.R* in a text editor and modify some of the parameters to see what happens.
-
-<br/>
 
 ### Back
 
