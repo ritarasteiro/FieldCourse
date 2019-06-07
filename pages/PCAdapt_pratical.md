@@ -1,6 +1,6 @@
 ---
 layout: page
-title: pratical pcadapt
+title: Pratical pcadapt
 ---
 
 All the data needed to this pratical can be found in [pcadapt_practicals.zip](../assets/pcadapt_practicals.zip)
@@ -8,16 +8,18 @@ All the data needed to this pratical can be found in [pcadapt_practicals.zip](..
 
 ## Instructions for analysing wolf genomic data using the pcadapt package
 
-To cut and paste without R complaining I suggest first saving as plain text file, and cut and paste from a text editor. (Otherwise WYSIWYG editors have a nasty habit of substituting non-text characters to ‘prettify’ the document.)
 
-To install the pcadapt package.
+### To install the pcadapt package.
 
-I am assuming that you have already set up R so you can install packages (see Running_plot_ms_trees.docx). 
-Install pcadapt (These instructions are based on version 4.1.0)
+Install pcadapt in R (These instructions are based on version 4.1.0).
+
+```R
+install.packages("pcadapt")
+```
 Then wait quite a long time while many packages get downloaded and installed. 
-library(“pcadapt”)
 
-###To obtain the wolf data from Dryad
+
+### To obtain the wolf data from Dryad
 
 The file we are going to work with can be found by clicking on
 https://datadryad.org/resource/doi:10.5061/dryad.c9b25
@@ -28,7 +30,7 @@ You will also need some individual descriptor information which is available in 
 ```AllSamples_n107_EnvData_wLatLong_toUpload.csv```
 (converted to .csv from the relevant file in Dryad)
 
-###Reading vcf data into pcadapt
+### Reading vcf data into pcadapt
 
 ```R
 library(pcadapt)
@@ -100,7 +102,7 @@ This gives a PCA plot:
 ```R
 plot(test1,option=”scores”)
 ```
-###Displaying the population information
+### Displaying the population information
 
 We can plot with points coloured by population of origin.
 You can obtain the list of population names from the csv file as:
@@ -110,7 +112,7 @@ poplist.names = descript[,4] #fourth column contains the population names
 
 plot(test1,option="scores",pop=poplist.names)
 ```
-###Evidence of selection
+### Evidence of selection
 
 The following shows a plot of the –log10 pvalues. 
 ```R
