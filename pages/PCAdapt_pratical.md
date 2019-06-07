@@ -25,10 +25,7 @@ The file we are going to work with can be found by clicking on
 https://datadryad.org/resource/doi:10.5061/dryad.c9b25
 which gives some context. 
 You can either download the vcf file from here, but I have already done this in “wolf.vcf”
-You will also need some individual descriptor information which is available in the file
-
-```AllSamples_n107_EnvData_wLatLong_toUpload.csv```
-(converted to .csv from the relevant file in Dryad)
+You will also need some individual descriptor information which is available in the file AllSamples_n107_EnvData_wLatLong_toUpload.csv (converted to .csv from the relevant file in Dryad).
 
 ### Reading vcf data into pcadapt
 
