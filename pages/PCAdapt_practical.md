@@ -94,7 +94,7 @@ plot(test1,option="screeplot")
 This seems to have a bit of an elbow at 6, so let’s use 6.
 
 ```R
-test1 = pcadapt(fname,K=10)
+test1 = pcadapt(fname,K=6)
 ```
 We can see the components of ``test1``:
 ```R
