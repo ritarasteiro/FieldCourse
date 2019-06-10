@@ -125,6 +125,13 @@ poplist.names = descript[,4] #fourth column contains the population names
 plot(test1,option="scores",pop=poplist.names)
 ```
 
+By default, the projection is done onto the first two principal components. To plot other principal components, you need to specifie the values of i and j.
+
+```R
+plot(test1,option="scores", i=3, j=4, pop=poplist.names)
+```
+
+
 ### Evidence of selection
 
 The following shows a plot of the –log10 pvalues.
