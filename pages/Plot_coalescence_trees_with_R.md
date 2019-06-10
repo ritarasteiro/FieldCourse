@@ -10,7 +10,7 @@ title: Plotting coalescent trees using R
 
 If they are not installed you need to open R and
 
-1. set Cran Mirror, and choose one e.g. Bristol/ (but not https)
+1. set Cran Mirror, and choose one e.g. Bristol (but not https)
 2. select repositories, and accept the default it suggests
 3. select packages, choose *ape* and also choose *phyclust*
 
@@ -68,7 +68,7 @@ It should plot a tree with two colors corresponding to two populations. The ms c
 
 The **ms** command running behind the ```plot_ms_tree_mig()``` function is ```ms nsam nreps -T -I npop n1 n2 ... 4Nm```. In the example above it corresponds to ```ms 20 1 -T -I 2 10 10 10```.
 
-Try change the migration rate for instance (0.1). You can also increase the number of populations and sample sizes.
+Try change the migration rate for instance 0.1. You can also increase the number of populations and sample sizes.
 
 
 
