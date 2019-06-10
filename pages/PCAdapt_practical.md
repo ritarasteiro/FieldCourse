@@ -62,16 +62,16 @@ So you can use **plink** (many options). I just use the option below (but many o
 Then you can read in **R**
 
 ```R
-position.detail = read.table("plinkfile.map")
+position.details = read.table("plinkfile.map")
 ```
 
 where
 ```R
-chrom = position.detail[,1]
+chrom = position.details[,1]
 ```
 and
 ```R
-chrom.pos = position.detail[,4]
+chrom.pos = position.details[,4]
 ```
 -----------------------------------------------------------
 
