@@ -62,7 +62,7 @@ So you can use **plink** (many options). I just use the option below (but many o
 Then you can read in **R**
 
 ```R
-position.details = read.table("plinkfile.map")
+position.detail = read.table("plinkfile.map")
 ```
 
 where
