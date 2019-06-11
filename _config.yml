@@ -8,14 +8,13 @@ highlighter: rouge
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : GTPB Courses
+title : 
 author :
-  name : GTPB
-  email : bicourses@igc.gulbenkian.pt
-  github : github.com/GTPB
+  name : 
+  #github : github.com/GTPB
 
 # NOTE: If replacing this next line with your own URL, you likely want "https://" not "http://"
-production_url : https://gtpb.github.io/PGDH19
+production_url :
 
 # Tell Github to use the kramdown markdown interpreter
 # (see https://help.github.com/articles/migrating-your-pages-site-from-maruku)
@@ -50,7 +49,7 @@ JB :
   #     This means always setting the protocol (http|https) or prefixing with "/"
   #
   # NOTE: If replacing this next line with your own URL, you likely want "https://" not "http://"
-  BASE_PATH : https://gtpb.github.io/PGDH19
+  #BASE_PATH : https://gtpb.github.io/PGDH19
 
 
   # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
@@ -73,7 +72,7 @@ JB :
   rss_path : nil
 
   # Settings for comments helper
-  # Set 'provider' to the comment provider you want to use.
+  # Set 'provider' to the comment provider you want to use.GTPB Courses
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
