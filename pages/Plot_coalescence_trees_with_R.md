@@ -2,6 +2,9 @@
 layout: page
 title: Plotting coalescent trees using R
 ---
+### Setup
+Decide on your working folder, start R, and navigate to this folder.
+
 ### In order to work the scripts require two packages:
 * ape
 * phyclust
@@ -23,6 +26,9 @@ install.packages(c("phyclust", "ape"))
 * [plot_ms_trees_single_pop.R](../src/R/plot_ms_trees_single_pop.R)
 * [plot_ms_trees_mig.R](../src/R/plot_ms_trees_mig.R)
 
+If you click on the links above you will be able to download the files. 
+Put them in your working folder for R
+
 Type:
 ```R
 source(“plot_ms_trees_single_pop.R”)
@@ -36,14 +42,21 @@ You can run different scenarios:
 ```R
 plot_ms_tree(10, "-T")
 ```
+This is for a sample of 10 gene copies and the "-T" option indicates only to 
+simulate a tree rather than sequence data.
+
 * Population growth.
 ```R
 plot_ms_tree(10, "-T -G 1000")
 ```
+The "-G" flag specifies a scaled population growth rate (bigger values, faster growth)
+
 * Population decrease.
 ```R
 plot_ms_tree(100,"-T -G -2.119 -eG 2.5 0.0")
 ```
+A bit more complicated to explain: the population size is increasing into the past (note
+negative value), but then remains constant at a certain time. Details explained in the 
 
 
 The second script allows you to simulate structured populations and works differently.
