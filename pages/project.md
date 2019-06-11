@@ -22,5 +22,10 @@ plink1.9 --bfile ADAPTmap_genotypeTOP_20160222_full  --keep-fam pops_to_keep.txt
 #chr 30 chr X
 
 
+<br/>
 
+### Back
+
+Back to [pcadapt](./PCadapt.md).   
+Back to [first page](../index.md).
 
