@@ -20,7 +20,11 @@ plink1.9 --bfile ADAPTmap_genotypeTOP_20160222_full  --keep-fam pops_to_keep.txt
 #chrm 0 unplaced
 #chr 30 chr X
 
+-----------------------------------------
+##Note
+A trimmed dataset is available [here](../data/goat_trim.zip)
 
+----------------------------------------------------
 <br/>
 
 ### Back
