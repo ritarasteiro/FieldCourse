@@ -59,7 +59,7 @@ This will import the function ```plot_ms_tree_mig()```. This function has two pa
 
 
 ```R
-plot_ms_tree(c(10, 10), 10)
+plot_ms_tree_mig(c(10, 10), 10)
 ```
 
 It should plot a tree with two colors corresponding to two populations. The ms command here is for 20 individuals, 2 demes with 10 samples from each, and symmetrical migration with 4*Nm* = 10. The colours correspond to the different demes from which the genes were sampled.
