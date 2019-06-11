@@ -12,6 +12,3 @@
 
 
 ---
-
-<!--- ### Learning objectives
--->
