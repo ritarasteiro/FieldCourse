@@ -1,7 +1,6 @@
 
 ---
-layout: page
-title: Project pcadapt
+Project pcadapt
 ---
 
 
