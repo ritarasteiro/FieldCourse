@@ -56,7 +56,7 @@ The "-G" flag specifies a scaled population growth rate (bigger values, faster g
 plot_ms_tree(100,"-T -G -2.119 -eG 2.5 0.0")
 ```
 A bit more complicated to explain: the population size is increasing into the past (note
-negative value), but then remains constant at a certain time. Details explained in the 
+negative value), but then remains constant at a certain time. Details explained in the [ms documentation](../data/msdoc.pdf)
 
 
 The second script allows you to simulate structured populations and works differently.
