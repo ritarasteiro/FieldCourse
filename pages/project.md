@@ -18,7 +18,7 @@ codes. You can check [pops_to_keep.txt](../data/pops_to_keep.txt) as an example.
 ```
 plink1.9 --bfile ADAPTmap_genotypeTOP_20160222_full  --keep-fam pops_to_keep.txt  --allow-extra-chr  --chr-set 31 --make-bed --out ADAPTmap_genotypeTOP_20160222_trim
 ```
-In the bim file the first column correspond to the chromosomes. The new  genome assemby of the goat has 29 chromosomes. You will notice that you have chromosome 30 and 0, that corresponds to cromosome X and unplaced SNPs.  
+In the bim file, the first column corresponds to the chromosomes. The new  genome assemby of the goat has 29 chromosomes. You will notice that you have chromosomes 30 and 0, that correspond to cromosome X and unplaced SNPs.  
 
 
 
