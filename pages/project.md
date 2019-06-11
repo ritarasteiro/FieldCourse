@@ -12,7 +12,7 @@ The genomic data was analysed using the most recent version of the goat genome (
 
 
 
-The dataset has a very large amount of different breeds an populations. To be more feasible to work with, you need to trim the dataset to a smaller number of populations. Read the original paper and think of a hypothesis for your project. Then choose the populations needed to test it and create file with their codes. You can check [pops_to_keep.txt](../data/pops_to_keep.txt) as an example. Use the following **plink** command to trim the original dataset (check [plink1.9](https://www.cog-genomics.org/plink/1.9/index) for more details about the plink functions). 
+The dataset has a very large amount of different breeds an populations. To be more feasible to work with, you need to trim the dataset to a smaller number of populations. Read the original paper and think of a hypothesis for your project. Then choose the populations needed to test it and create file with their codes. You can check [pops_to_keep.txt](../data/pops_to_keep.txt) as an example. Use the following **plink** command to trim the original dataset (check [here](https://www.cog-genomics.org/plink/1.9/index) for more details about the plink functions). 
 
 ```
 plink1.9 --bfile ADAPTmap_genotypeTOP_20160222_full  --keep-fam pops_to_keep.txt  --allow-extra-chr  --chr-set 31 --make-bed --out ADAPTmap_genotypeTOP_20160222_trim
