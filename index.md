@@ -1,5 +1,5 @@
 
-## Description
+
 Some description of the course
 
 
