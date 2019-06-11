@@ -1,5 +1,5 @@
 
-## Course Description
+Some description of the course
 
 
 ## Detailed Program
