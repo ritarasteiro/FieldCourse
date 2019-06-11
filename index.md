@@ -7,8 +7,8 @@
 
 ## Course Documentation
 
-* Day 1 [Coalescent theory](./pages/coalescent.md)
-* Day 2 [PCadapt](./pages/PCadapt.md)
+* [Coalescent theory](./pages/coalescent.md)
+* [PCadapt](./pages/PCadapt.md)
 
 
 ---
