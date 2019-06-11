@@ -2,8 +2,6 @@
 layout: page
 title: Plotting coalescent trees using R
 ---
-## Plotting coalescent trees using R
-
 ### In order to work the scripts require two packages:
 * ape
 * phyclust
