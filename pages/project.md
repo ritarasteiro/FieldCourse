@@ -6,7 +6,7 @@ title: PROJECT
 ## Looking for signatures of selection and adaptation across the goat genome
 
 
-We will be using the AdaptMap goat dataset that can be found in [Dryad](https://datadryad.org/resource/doi:10.5061/dryad.v8g21pt). In addition, make sure that you follow the link to, and download a copy of, the paper that describes this dataset. The distribution contains three different **plink** files (.bed, .bim, .fam). These files potentially have all the information needed for your analyses (check the [plink1.9](https://www.cog-genomics.org/plink/1.9/formats) webpage for more details about the files).
+We will be using the AdaptMap goat dataset that can be found in [Dryad](https://datadryad.org/resource/doi:10.5061/dryad.v8g21pt). In addition, make sure that you follow the link that Dryad provide to the paper that describes this dataset. The distribution contains three different **plink** files (.bed, .bim, .fam). These files potentially have all the information needed for your analyses (check the [plink1.9](https://www.cog-genomics.org/plink/1.9/formats) webpage for more details about the files).
 
 
 **However...** The dataset has a very large number of individuals sampled from different breeds (look at the paper). To make it more feasible to work with, it is necessary to trim the dataset to a smaller number of populations. An example trimmed dataset is available [here](../data/goat_trim.zip). This is based on data from the following populations:  
