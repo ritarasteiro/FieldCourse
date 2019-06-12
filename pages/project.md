@@ -9,22 +9,22 @@ title: PROJECT
 We will be using the AdaptMap goat dataset that can be found in [Dryad](https://datadryad.org/resource/doi:10.5061/dryad.v8g21pt). In addition, make sure that you follow the link to, and download a copy of, the paper that describes this dataset. The distribution contains three different **plink** files (.bed, .bim, .fam). These files potentially have all the information needed for your analyses (check the [plink1.9](https://www.cog-genomics.org/plink/1.9/formats) webpage for more details about the files).
 
 
-**However...** The dataset has a very large number of individuals sampled from different breeds (look at the paper). To make it more feasible to work with, it is necessary to trim the dataset to a smaller number of populations. An example trimmed dataset is available [here](../data/goat_trim.zip). This is based on data from the following populations: 
-ABR - Abergelle (East Africa)
-ALP - Alpine
-BIO - Bionda dell'Adamello (Alpine)
-BOE - Boer 
-OSS - Oasis (Egypt)
-DDP - DDP (Central Asia)
-BEZ - Bezoar (ancient breed)
-ORO - Orobica (Alpine)
-SAA - Saanen (France, Alpine)
-CAS - Cashmere
-ANG - Angora
-ANK - Ankara (Angora)
-BEY - Berneya (SW Europe)
+**However...** The dataset has a very large number of individuals sampled from different breeds (look at the paper). To make it more feasible to work with, it is necessary to trim the dataset to a smaller number of populations. An example trimmed dataset is available [here](../data/goat_trim.zip). This is based on data from the following populations:  
+ABR - Abergelle (East Africa)  
+ALP - Alpine  
+BIO - Bionda dell'Adamello (Alpine)  
+BOE - Boer  
+OSS - Oasis (Egypt)  
+DDP - DDP (Central Asia)  
+BEZ - Bezoar (ancient breed)  
+ORO - Orobica (Alpine)  
+SAA - Saanen (France, Alpine)  
+CAS - Cashmere  
+ANG - Angora  
+ANK - Ankara (Angora)  
+BEY - Berneya (SW Europe)  
 
-You may base your project purely on this dataset, in which case you do not need to download files from Dryad. Alternatively, you could have a look at the original paper and think of suitable hypotheses for your project. Then choose the populations needed to test the hypotheses. If you take this route, you will need to run the plink command in Doraemon, as you did on Wednesday. You can create a file with a list of the population codes, as in this example: [pops_to_keep.txt](../data/pops_to_keep.txt) (Note that there are unimportant errors in this file: CAS is repeated, and 
+You may base your project purely on this dataset, in which case you do not need to download files from Dryad. Alternatively, you could have a look at the original paper and think of suitable hypotheses for your project. Then choose the populations needed to test the hypotheses. If you take this route, you will need to run the plink command in Doraemon, as you did on Wednesday. You can create a file with a list of the population codes, as in this example: [pops_to_keep.txt](../data/pops_to_keep.txt) (Note that there are unimportant errors in this file: CAS is repeated, and SRP doesn't exist - but plink just uses CAS once, and ignores SRP).
 . 
 
 Use the following **plink** command to trim the original dataset (check [here](https://www.cog-genomics.org/plink/1.9/index) for more details about the plink functions). 
