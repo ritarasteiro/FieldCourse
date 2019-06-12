@@ -36,6 +36,8 @@ In the bim file, the first column corresponds to the chromosomes. The new  genom
 
 The AdaptMap goat dataset was mapped to the most recent version of the goat genome ([ARS1](https://www.ncbi.nlm.nih.gov/genome/gdv/browser/?acc=GCF_001704415.1&context=genome)). So, when you need to query any particular SNPs that you find you can link to this, and then follow the same procedure as you did with the wolves.
 
+**Note:** In tests with the trimmed dataset provided, it appears that unusually extreme p-values can appear when K is set too large - for example if you forget to reset it after examining the scree plot. Make sure that you follow Cattell’s rule, as described in the vignette, before doing a Manhattan plot and identifying candidate SNPs.
+
 ## Aims for the Project
 
 It is probably best to conduct your project with a view to how you will write it up in a report.
