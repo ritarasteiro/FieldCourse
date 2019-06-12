@@ -1,13 +1,7 @@
 
 
-Some description of the course
-
-
-
-## Course Documentation
-
-* [Coalescent theory](./pages/coalescent.md)
-* [pcadapt](./pages/PCadapt.md)
+* Part1  [Coalescent theory](./pages/coalescent.md)
+* Part2 [pcadapt](./pages/PCadapt.md)
 
 
 ---
