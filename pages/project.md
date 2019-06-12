@@ -32,7 +32,8 @@ A trimmed dataset is available [here](../data/goat_trim.zip).
 
 ----------------------------------------------------
 
-###Reference
+
+## Reference
 [Bertolini F, Servin B, Talenti A, Rochat E, Kim ES, Oget C, Palhière I, Crisà A, Catillo G, Steri R, Amills M, Colli L, Marras G, Milanesi M, Nicolazzi E, Rosen BD, Van Tassell CP, Guldbrandtsen B, Sonstegard TS, Tosser-Klopp G, Stella A, Rothschild MF, Joost S, Crepaldi P, AdaptMap Consortium (2018) Signatures of selection and environmental adaptation across the goat genome post-domestication. Genetics Selection Evolution 50(1): 57]( https://doi.org/10.1186/s12711-018-0421-y)
 
 <br/>
