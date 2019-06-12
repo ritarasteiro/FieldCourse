@@ -16,7 +16,7 @@ BIO - Bionda dell'Adamello (Alpine)
 BOE - Boer  
 OSS - Oasis (Egypt)  
 DDP - DDP (Central Asia)  
-BEZ - Bezoar (ancient breed)  
+BEZ - Bezoar (wild goat)  
 ORO - Orobica (Alpine)  
 SAA - Saanen (France, Alpine)  
 CAS - Cashmere  
