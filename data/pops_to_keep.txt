@@ -10,7 +10,5 @@ SAA
 CAS
 ANG
 ANK
-CAS
-SRP
 BEY
 
