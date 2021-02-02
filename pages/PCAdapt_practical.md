@@ -120,7 +120,7 @@ plot(test1,option="scores")
 We can plot with points coloured by population of origin.
 You can obtain the list of population names from the *csv* file as:
 ```R
-descript = read.csv("AllSamples_n107_EnvData_wLatLong_toUpload.csv", as.is = T)
+descript = read.csv("AllSamples_n107_EnvData_wLatLong_toUpload.csv")
 poplist.names = descript[,4] #fourth column contains the population names
 
 plot(test1,option="scores",pop=poplist.names)
