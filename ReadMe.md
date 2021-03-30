@@ -1,6 +1,6 @@
-## Field course 2019
+## Field course
 
-###  School of Biological Sciences, UoB - 2019
+###  School of Biological Sciences, UoB
 
 
 ---
