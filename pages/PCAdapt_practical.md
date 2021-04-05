@@ -85,8 +85,9 @@ fname <- read.pcadapt("wolf.bed",type="bed")
 ```
 You should read in 107 individuals and 13092 SNPs.
 
-TODO: CHECK if this file is still created when using bed files
+
 Additionally, this function makes a new file in your current folder called ``positions.txt``, which has the nucleotide position of each SNP that is kept (i.e. 13092 positions in this example).
+TODO: CHECK if this file is still created when using bed files
 
 Read this file in:
 
