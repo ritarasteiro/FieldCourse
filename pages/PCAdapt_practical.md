@@ -37,9 +37,10 @@ Load  **plink1.9**
  module load apps/plink/1.90
 ```
 
-TODO: wolves have 39 pairs of chromosomes
+TODO: By default **plink1.9** reads 23 pairs of chromosomes. However, wolves have 39 pairs. We need to use the option `--allow-extra-chr` and set the chromosome number to 39.
+
 ```sh
-plink --vcf wolf.vcf --allow-extra-chr  --chr-set 39 --make-bed --out wolf
+plink --vcf wolf.vcf --allow-extra-chr --chr-set 39 --make-bed --out wolf
 ```
 
 You should see an output similar to this:
