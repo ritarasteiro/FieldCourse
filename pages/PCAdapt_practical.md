@@ -28,18 +28,19 @@ which gives some context. You can either download the vcf file here or use the `
 
 ### Convert ``wolf.vcf`` to ``wolf.bed``
 
-Login to your BluePebble account. Copy the wolf.vcf file to your /home/username (TODO: Check where sutudents are going to work in bluepebble /home or /work)
+Login to your BluePebble account. Copy the wolf.vcf file to your /home/username (TODO: Check where students are going to work in bluepebble /home or /work)
 
 Load  **plink1.9**
 
 ```sh
  module load apps/plink/1.90
 ```
-[//]: #  wolves have 39 pairs of chromosomes
+
+TODO: wolves have 39 pairs of chromosomes
 
 
 
-### Reading vcf data into pcadapt
+### Reading vcf data into pcadapt (TODO change to .bed)
 ```R
 fname <- read.pcadapt("wolf.vcf",type="vcf")
 ```
