@@ -37,7 +37,7 @@ Load  **plink1.9**
  module load apps/plink/1.90
 ```
 
-TODO: By default **plink1.9** reads 23 pairs of chromosomes. However, wolves have 39 pairs. We need to use the option `--allow-extra-chr` and set the chromosome number to 39.
+TODO: By default **plink1.9** reads 23 pairs of chromosomes. However, wolves have 78 chromosomes arraged in 39 pairs. We need to use the option `--allow-extra-chr` and set the chromosome number to 39.
 
 ```sh
 plink --vcf wolf.vcf --allow-extra-chr --chr-set 39 --make-bed --out wolf
@@ -76,20 +76,18 @@ In the end you will have three different **plink** files (```.bed```,```.bim```,
 
 ### Reading vcf data into pcadapt (TODO change to .bed)
 ```R
-fname <- read.pcadapt("wolf.vcf",type="vcf")
-```
-
-```R
 library(pcadapt)
 ```
 Then do the following:
 
 ```R
-fname <- read.pcadapt("wolf.vcf",type="vcf")
+fname <- read.pcadapt("wolf.bed",type="bed")
 ```
 You should read in 107 individuals and 13092 SNPs.
 
+TODO: CHECK if this file is still created when using bed files
 Additionally, this function makes a new file in your current folder called ``positions.txt``, which has the nucleotide position of each SNP that is kept (i.e. 13092 positions in this example).
+
 Read this file in:
 
 ```R
@@ -99,22 +97,15 @@ pcadapt.position <- scan("positions.txt")
 ----------------------------------------------------------
 **NOTE**
 
-Unfortunately, if you are interested in the identity of particular SNPs, this is not very informative because it throws out chromosome or scaffold information that is useful for consulting genebank
-
-
-So you can use **plink** (many options). I just use the option below (but many other alternatives available – see the plink 1.9 manual online).
-
-```
-./plink --vcf wolf.vcf --chr-set 38 --recode --out plinkfile
-```
+Unfortunately, if you are interested in the identity of particular SNPs, this is not very informative because it throws out chromosome or scaffold information that is useful for consulting genebank or ensembl genome browser.
 
 
 <br/>
 
-Then you can read in **R**
+The `wolf.bim` file has all this information. You can read it in **R**
 
 ```R
-position.details = read.table("plinkfile.map")
+position.details = read.table("wolf.bim")
 ```
 
 where
