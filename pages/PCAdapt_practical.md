@@ -23,10 +23,26 @@ Then wait quite a long time while many packages get downloaded and installed.
 ### To obtain the wolf data from Dryad
 
 The vcf file we are going to work with can be found in [Dryad](https://datadryad.org/resource/doi:10.5061/dryad.c9b25)
-which gives some context. You can either download the vcf file here or use the ``wolf.vcf`` on [pcadapt_practicals.zip](../data/pcadapt_practicals.zip). You will also need some individual descriptor information which is available in the file ``AllSamples_n107_EnvData_wLatLong_toUpload.csv`` (converted to .csv from the relevant file in Dryad).
+which gives some context. You can either download the vcf file here or use the ``wolf.vcf`` on [pcadapt_practicals.zip](../data/pcadapt_practicals.zip). You will also need some individual descriptor information which is available in the file ``AllSamples_n107_EnvData_wLatLong_toUpload.csv`` (converted to .csv from the relevant file in Dryad). 
+ **pcadapt** no longer supports the vcf files and its preferred format is ``.bed`` type files. We suggest that you use  **plink1.9** to convert the ``wolf.vcf`` to ``wolf.bed``.
+
+### Convert ``wolf.vcf`` to ``wolf.bed``
+
+Login to your BluePebble account. Copy the wolf.vcf file to your /home/username (TODO: Check where sutudents are going to work in bluepebble /home or /work)
+
+Load  **plink1.9**
+
+```sh
+ module load apps/plink/1.90
+```
+[comment]: <>wolves have 39 pairs of chromosomes
+
 
 
 ### Reading vcf data into pcadapt
+```R
+fname <- read.pcadapt("wolf.vcf",type="vcf")
+```
 
 ```R
 library(pcadapt)
