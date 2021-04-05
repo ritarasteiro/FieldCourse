@@ -36,11 +36,13 @@ Load  **plink1.9**
  module load apps/plink/1.90
 ```
 
+TODO: wolves have 39 pairs of chromosomes
 ```sh
 plink --vcf wolf.vcf --allow-extra-chr  --chr-set 39 --make-bed --out wolf
 ```
 
-TODO: wolves have 39 pairs of chromosomes
+You should see an output similar to this:
+
 
 ```console
 PLINK v1.90b6.18 64-bit (16 Jun 2020)          www.cog-genomics.org/plink/1.9/
@@ -66,6 +68,9 @@ Total genotyping rate is 0.993061.
 Note: No phenotypes present.
 --make-bed to wolf.bed + wolf.bim + wolf.fam ... done.
 ```
+
+In the end you will have three different **plink** files (```.bed```,```.bim```, ```.fam```). Check the [plink1.9](https://www.cog-genomics.org/plink/1.9/formats) webpage for more details about the files. Finally, download these three files to your computer.
+
 
 ### Reading vcf data into pcadapt (TODO change to .bed)
 ```R
