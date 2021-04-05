@@ -36,9 +36,36 @@ Load  **plink1.9**
  module load apps/plink/1.90
 ```
 
+```sh
+plink --vcf wolf.vcf --allow-extra-chr  --chr-set 39 --make-bed --out wolf
+```
+
 TODO: wolves have 39 pairs of chromosomes
 
+```console
+PLINK v1.90b6.18 64-bit (16 Jun 2020)          www.cog-genomics.org/plink/1.9/
+(C) 2005-2020 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to wolf.log.
+Options in effect:
+  --allow-extra-chr
+  --chr-set 39
+  --make-bed
+  --out wolf
+  --vcf wolf.vcf
 
+385421 MB RAM detected; reserving 192710 MB for main workspace.
+--vcf: wolf-temporary.bed + wolf-temporary.bim + wolf-temporary.fam written.
+13092 variants loaded from .bim file.
+107 samples (0 males, 0 females, 107 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to wolf.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 107 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.993061.
+13092 variants and 107 samples pass filters and QC.
+Note: No phenotypes present.
+--make-bed to wolf.bed + wolf.bim + wolf.fam ... done.
+```
 
 ### Reading vcf data into pcadapt (TODO change to .bed)
 ```R
