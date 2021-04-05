@@ -35,7 +35,7 @@ Load  **plink1.9**
 ```sh
  module load apps/plink/1.90
 ```
-[comment]: <>wolves have 39 pairs of chromosomes
+[comment]: <> wolves have 39 pairs of chromosomes
 
 
 
