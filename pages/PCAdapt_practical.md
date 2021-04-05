@@ -29,7 +29,7 @@ which gives some context. You can either download the vcf file here or use the `
 ### Convert ``wolf.vcf`` to ``wolf.bed``
 **pcadapt** no longer supports vcf files and its preferred format is ``.bed`` type files. We suggest that you use  **plink1.9** to convert the ``wolf.vcf`` to ``wolf.bed``.
 
-Login to your BluePebble account. Copy the wolf.vcf file to your /home/username (TODO: Check where students are going to work in bluepebble /home or /work)
+Login to your BluePebble account. Upload the wolf.vcf file to your /home/username (TODO: Check how students login and where they are going to work in bluepebble /home or /work)
 
 Load  **plink1.9**
 
