@@ -29,10 +29,14 @@ You may base your project purely on this dataset, in which case you do not need 
 
 Use the following **plink** command to trim the original dataset (check [here](https://www.cog-genomics.org/plink/1.9/index) for more details about the plink functions). 
 
+TODO: number of chromosomes. Domestic pig : 19 pairs; Wild boar : it varies but usually 18 pairs. 10.2 has 18 autosomes plus sex chromosomes and mtDNA. However in the ped file it has 24 pairs plus O . 
+
+TODO: In the map file, the first column corresponds to the chromosomes. The new  genome assemby of the goat has 29 chromosomes. You will notice that you have chromosomes 30 and 0, which respectively correspond to chromosome X and unplaced SNPs.  
+
 ```
-plink --bfile ADAPTmap_genotypeTOP_20160222_full  --keep-fam pops_to_keep.txt  --allow-extra-chr  --chr-set 31 --make-bed --out ADAPTmap_genotypeTOP_20160222_trim
+plink --file JWM_Final  --keep-fam pops_to_keep.txt  --allow-extra-chr  --chr-set 25 --make-be d --out JWM_Final_trim
 ```
-In the bim file, the first column corresponds to the chromosomes. The new  genome assemby of the goat has 29 chromosomes. You will notice that you have chromosomes 30 and 0, which respectively correspond to chromosome X and unplaced SNPs.  
+
 
 The AdaptMap goat dataset was mapped to the most recent version of the goat genome ([ARS1](https://www.ncbi.nlm.nih.gov/genome/gdv/browser/?acc=GCF_001704415.1&context=genome)). So, when you need to query any particular SNPs that you find you can link to this, and then follow the same procedure as you did with the wolves.
 
@@ -51,6 +55,7 @@ When you write your report, you will need to provide an Introduction, for which 
 ## Reference
 [Bertolini F, Servin B, Talenti A, Rochat E, Kim ES, Oget C, Palhière I, Crisà A, Catillo G, Steri R, Amills M, Colli L, Marras G, Milanesi M, Nicolazzi E, Rosen BD, Van Tassell CP, Guldbrandtsen B, Sonstegard TS, Tosser-Klopp G, Stella A, Rothschild MF, Joost S, Crepaldi P, AdaptMap Consortium (2018) Signatures of selection and environmental adaptation across the goat genome post-domestication. Genetics Selection Evolution 50(1): 57]( https://doi.org/10.1186/s12711-018-0421-y)
 
+[Yang, B., Cui, L., Perez-Enciso, M. et al. Genome-wide SNP data unveils the globalization of domesticated pigs. Genet Sel Evol 49, 71 (2017)]( https://doi.org/10.1186/s12711-017-0345-y )
 <br/>
 
 ### Back
