@@ -53,7 +53,7 @@ When you write your report, you will need to provide an Introduction, for which 
 
 
 ## Reference
-[Bertolini F, Servin B, Talenti A, Rochat E, Kim ES, Oget C, Palhière I, Crisà A, Catillo G, Steri R, Amills M, Colli L, Marras G, Milanesi M, Nicolazzi E, Rosen BD, Van Tassell CP, Guldbrandtsen B, Sonstegard TS, Tosser-Klopp G, Stella A, Rothschild MF, Joost S, Crepaldi P, AdaptMap Consortium (2018) Signatures of selection and environmental adaptation across the goat genome post-domestication. Genetics Selection Evolution 50(1): 57]( https://doi.org/10.1186/s12711-018-0421-y)
+<!--- [Bertolini F, Servin B, Talenti A, Rochat E, Kim ES, Oget C, Palhière I, Crisà A, Catillo G, Steri R, Amills M, Colli L, Marras G, Milanesi M, Nicolazzi E, Rosen BD, Van Tassell CP, Guldbrandtsen B, Sonstegard TS, Tosser-Klopp G, Stella A, Rothschild MF, Joost S, Crepaldi P, AdaptMap Consortium (2018) Signatures of selection and environmental adaptation across the goat genome post-domestication. Genetics Selection Evolution 50(1): 57]( https://doi.org/10.1186/s12711-018-0421-y) --->
 
 [Yang, B., Cui, L., Perez-Enciso, M. et al. Genome-wide SNP data unveils the globalization of domesticated pigs. Genet Sel Evol 49, 71 (2017)]( https://doi.org/10.1186/s12711-017-0345-y )
 <br/>
