@@ -29,7 +29,7 @@ You may base your project purely on this dataset, in which case you do not need 
 
 Use the following **plink** command to trim the original dataset (check [here](https://www.cog-genomics.org/plink/1.9/index) for more details about the plink functions). 
 
-TODO: number of chromosomes. Domestic pig : 19 pairs; Wild boar : it varies but usually 18 pairs. SScrofa10.2 has 18 autosomes plus sex chromosomes and mtDNA. However in the ped file we have 24 pairs plus O . 
+TODO: number of chromosomes. Domestic pig : 19 pairs; Wild boar : it varies but usually 18 pairs. SScrofa10.2 has 18 autosomes pairs plus sex chromosomes and mtDNA. However in the ped file we have 24 pairs plus O . The chip (https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0006524) has  two pseudo chromosomes (AluIshort and AluIlong, respectively). TODO: check the Illumina PorcineSNP60
 
 TODO: In the bim file, the first column corresponds to the chromosomes. The new  genome assemby of the goat has 29 chromosomes. You will notice that you have chromosomes 30 and 0, which respectively correspond to chromosome X and unplaced SNPs.  
 
