@@ -29,12 +29,12 @@ You may base your project purely on this dataset, in which case you do not need 
 
 Use the following **plink** command to trim the original dataset (check [here](https://www.cog-genomics.org/plink/1.9/index) for more details about the plink functions). 
 
-TODO: number of chromosomes. Domestic pig : 19 pairs; Wild boar : it varies but usually 18 pairs. 10.2 has 18 autosomes plus sex chromosomes and mtDNA. However in the ped file it has 24 pairs plus O . 
+TODO: number of chromosomes. Domestic pig : 19 pairs; Wild boar : it varies but usually 18 pairs. SScrofa10.2 has 18 autosomes plus sex chromosomes and mtDNA. However in the ped file we have 24 pairs plus O . 
 
-TODO: In the map file, the first column corresponds to the chromosomes. The new  genome assemby of the goat has 29 chromosomes. You will notice that you have chromosomes 30 and 0, which respectively correspond to chromosome X and unplaced SNPs.  
+TODO: In the bim file, the first column corresponds to the chromosomes. The new  genome assemby of the goat has 29 chromosomes. You will notice that you have chromosomes 30 and 0, which respectively correspond to chromosome X and unplaced SNPs.  
 
 ```
-plink --file JWM_Final  --keep-fam pops_to_keep.txt  --allow-extra-chr  --chr-set 25 --make-be d --out JWM_Final_trim
+plink --file JWM_Final  --keep-fam pops_to_keep.txt  --allow-extra-chr  --chr-set 25 --make-bed --out JWM_Final_trim
 ```
 
 
