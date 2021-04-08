@@ -24,17 +24,17 @@ ANG - Angora
 ANK - Ankara (Angora)  
 BEY - Berneya (SW Europe)  
 
-You may base your project purely on this dataset, in which case you do not need to download files from Dryad. Alternatively, you could have a look at the original paper and think of suitable hypotheses for your project. Then choose the populations needed to test the hypotheses. If you take this route, you will need to run the plink command in Doraemon, as you did on Wednesday. You can create a file with a list of the population codes, as in this example: [pops_to_keep.txt](../data/pops_to_keep.txt).
+You may base your project purely on this dataset, in which case you do not need to download files from Dryad. Alternatively, you could have a look at the original paper and think of suitable hypotheses for your project. Then choose the populations needed to test the hypotheses. If you take this route, you will need to run the plink command in BluePebble, as you did on Wednesday. You can create a file with a list of the population codes, as in this example: [pops_to_keep.txt](../data/pops_to_keep.txt).
 . 
 
 Use the following **plink** command to trim the original dataset (check [here](https://www.cog-genomics.org/plink/1.9/index) for more details about the plink functions). 
-
-TODO: number of chromosomes. Domestic pig : 19 pairs; Wild boar : it varies but usually 18 pairs. SScrofa10.2 has 18 autosomes pairs plus sex chromosomes and mtDNA. However in the ped file we have 24 pairs plus O . The chip (https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0006524) has  two pseudo chromosomes (AluIshort and AluIlong, respectively). TODO: check the Illumina PorcineSNP60
+T
+TODO: number of chromosomes. Domestic pig : 19 pairs; Wild boar : it varies but usually 18 pairs. SScrofa10.2 has 18 autosomes pairs plus sex chromosomes and mtDNA. However in the ped file we have 24 pairs plus O . The chip (https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0006524) has  two pseudo chromosomes (AluIshort and AluIlong, respectively). TODO: check the Illumina PorcineSNP60  NOTE: we could use just the autosomes in the exercise with the plink option --chr 1-18
 
 TODO: In the bim file, the first column corresponds to the chromosomes. The new  genome assemby of the goat has 29 chromosomes. You will notice that you have chromosomes 30 and 0, which respectively correspond to chromosome X and unplaced SNPs.  
 
 ```
-plink --file JWM_Final  --keep-fam pops_to_keep.txt  --allow-extra-chr  --chr-set 25 --make-bed --out JWM_Final_trim
+plink --file JWM_Final  --keep-fam pops_to_keep.txt  --chr 1-18 --make-bed --out JWM_Final_trim
 ```
 
 
