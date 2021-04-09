@@ -33,7 +33,7 @@ TODO: number of chromosomes. Domestic pig : 19 pairs; Wild boar : it varies but 
 
 TODO: In the bim file, the first column corresponds to the chromosomes. The new  genome assemby of the goat has 29 chromosomes. You will notice that you have chromosomes 30 and 0, which respectively correspond to chromosome X and unplaced SNPs.  
 
-```
+```sh
 plink --file JWM_Final  --keep-fam pops_to_keep.txt  --chr 1-18 --make-bed --out JWM_Final_trim
 ```
 
