@@ -1,1 +1,1 @@
-This foldar has the old versions of the Field Course
+This folder has the old versions of the Field Course
