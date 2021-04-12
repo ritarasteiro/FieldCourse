@@ -215,7 +215,7 @@ The link above will take you directly to the genome of the dog. Choose the chrom
 
 For example:
 
-<img src="..\data\ncbi_pic.png">
+<img src="..\data\ncbi_pic.png"> 
 
 <br/>
 
