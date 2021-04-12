@@ -4,6 +4,7 @@ title: PCADAPT
 ---
 
 * [Introduction to pcadapt](../data/pcadapt_intro.pdf)
+* 
   [Practical pcadapt](./PCAdapt_practical.md) 
 <!-- + * [Project pcadapt](./project.md) + --> 
 <!-- + this is a comment + --> 
