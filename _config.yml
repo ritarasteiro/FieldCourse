@@ -8,7 +8,7 @@ highlighter: rouge
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : Computational Genomic Approaches in Evolution Field Course
+title : Computational Genomic Approaches in Evolution and Ecology Field Course
 
 # NOTE: If replacing this next line with your own URL, you likely want "https://" not "http://"
 production_url : https://ritarasteiro.github.io/FieldCourse
