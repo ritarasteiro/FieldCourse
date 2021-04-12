@@ -74,6 +74,8 @@ In the end you will have three different **plink** files (```.bed```,```.bim```,
 
 
 ### Reading .bed data into pcadapt 
+Return to **R**  and load **pcadapt**:
+
 ```R
 library(pcadapt)
 ```
