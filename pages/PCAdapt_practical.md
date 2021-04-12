@@ -27,10 +27,9 @@ which gives some context. You can either download the vcf file here or use the `
  
 
 ### Convert ``wolf.vcf`` to ``wolf.bed``
+Login to your BluePebble account. Create a folder named pcadapt in your $WORK directory. Upload the wolf.vcf file to your $WORK/pcadapt/ 
+
 **pcadapt** no longer supports vcf files and its preferred format is ``.bed`` type files. We suggest that you use  **plink1.9** to convert the ``wolf.vcf`` to ``wolf.bed``.
-
-Login to your BluePebble account. Upload the wolf.vcf file to your /home/username (TODO: Check how students login and where they are going to work in bluepebble /home or /work)
-
 Load  **plink1.9**
 
 ```sh
@@ -74,10 +73,17 @@ Note: No phenotypes present.
 In the end you will have three different **plink** files (```.bed```,```.bim```, ```.fam```). Check the [plink1.9](https://www.cog-genomics.org/plink/1.9/formats) webpage for more details about the files. Finally, download these three files to your computer.
 
 
-### Reading vcf data into pcadapt (TODO change to .bed)
+### Reading .bed data into pcadapt 
 ```R
 library(pcadapt)
 ```
+
+A tutorial for running **pcadapt** is to be found  [here](https://bcm-uga.github.io/pcadapt/articles/pcadapt.html) or using:
+```R
+vignette(“pcadapt”)
+```
+<br/>
+
 Then do the following:
 
 ```R
@@ -86,10 +92,10 @@ fname <- read.pcadapt("wolf.bed",type="bed")
 You should read in 107 individuals and 13092 SNPs.
 
 
-Additionally, this function makes a new file in your current folder called ``positions.txt``, which has the nucleotide position of each SNP that is kept (i.e. 13092 positions in this example).
+TODOAdditionally, this function makes a new file in your current folder called ``positions.txt``, which has the nucleotide position of each SNP that is kept (i.e. 13092 positions in this example).
 TODO: CHECK if this file is still created when using bed files
 
-Read this file in:
+TODORead this file in:
 
 ```R
 pcadapt.position <- scan("positions.txt")
@@ -119,13 +125,7 @@ chrom.pos = position.details[,4]
 ```
 -----------------------------------------------------------
 
-<br/>
 
-A tutorial for running **pcadapt** is to be found using
-```R
-vignette(“pcadapt”)
-```
-<br/>
 
 If we use, say, *K=10*, we can get a scree plot, and then can revise value of K (make sure you use upper case *K*)
 ```R
@@ -161,11 +161,19 @@ plot(test1,option="scores")
 ### Displaying the population information
 
 We can plot with points coloured by population of origin.
+
 You can obtain the list of population names from the *csv* file as:
 ```R
 descript = read.csv("AllSamples_n107_EnvData_wLatLong_toUpload.csv")
 poplist.names = descript[,4] #fourth column contains the population names
-
+```
+or using the wolf.fam file as:
+```R
+descript = read.table("wolf.fam")
+poplist.names = descript[,1] #first column contains the population names
+```
+Then this gives a PCA plot with population information:
+```R
 plot(test1,option="scores",pop=poplist.names)
 ```
 
