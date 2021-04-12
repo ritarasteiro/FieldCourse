@@ -187,23 +187,23 @@ We can see what principal component they have the highest correlation with by:
 get.pc(test1,signif)
 ```
 
-We can look at the distribution of the allele types on the PCA plot associated with this high scoring SNP.
+We can look at the distribution of the allele types on the PCA plot associated with high scoring SNPs.
 For example the first SNP (position 3981 among the SNPs – note, not position in the genome) correlates with PC4. So we might hope to see some difference in the distribution of genotypes for this SNP in the PCA plot.
 
-We can look at this from the raw PCA data kept in the ``test1`` object, and the genotype info we have stored in raw.data:
+First, we can remind ourselves of the geographic labels of the individuals: 
+```R
+plot(test1,option="scores", i=1, j=4, pop=poplist.names)
+```
+as before, which gives:
+
+<img src="..\data\project1.png">
+
+We can then look at the distribution of genotypes for SNP 3981, using the raw PCA data kept in the ``test1`` object, and the genotype info we have stored in raw.data:
 ```R
 plot(test1$scores[,1],test1$scores[,4],col=raw.data[,3981]+1,pch=16)
 ```
 
 <img src="..\data\project_selec.png"> 
-
-For comparison we have 
-```R
-plot(test1,option="scores", i=1, j=4, pop=poplist.names)
-```
-as before:
-
-<img src="..\data\project1.png">
 
 You can see that this SNP seems to be strongly differentiated between the High Arctic population and the others. In this coding,  black signifies the 00 homozygote, red signifies the 01 heterozygote, and green signifies the 11 homozygote. The distribution of genotypes within the areas seems broadly consistent with Hardy-Weinberg equilibrium.
 
