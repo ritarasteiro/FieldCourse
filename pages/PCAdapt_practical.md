@@ -195,7 +195,7 @@ We can look at this from the raw PCA data kept in the ``test1`` object, and the 
 plot(test1$scores[,1],test1$scores[,4],col=raw.data[,3981]+1,pch=16)
 ```
 
-<img src="..\images\project_selec.png">
+<img src="..\data\project_selec.png">
  
 
 For comparison we have 
