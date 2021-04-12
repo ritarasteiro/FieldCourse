@@ -126,10 +126,10 @@ The scree plot is obtained by
 ```R
 plot(test1,option="screeplot")
 ```
-This seems to have a bit of an elbow at 6, so let’s use 6.
+This seems to have a bit of an elbow at 6, so let’s use 5.
 
 ```R
-test1 = pcadapt(fname,K=6)
+test1 = pcadapt(fname,K=5)
 ```
 We can see the components of ``test1``:
 ```R
@@ -158,11 +158,6 @@ You can obtain the list of population names from the *csv* file as:
 descript = read.csv("AllSamples_n107_EnvData_wLatLong_toUpload.csv")
 poplist.names = descript[,4] #fourth column contains the population names
 ```
-or using the wolf.fam file as:
-```R
-descript = read.table("wolf.fam")
-poplist.names = descript[,1] #first column contains the population names
-```
 Then this gives a PCA plot with population information:
 ```R
 plot(test1,option="scores",pop=poplist.names)
@@ -171,7 +166,7 @@ plot(test1,option="scores",pop=poplist.names)
 By default, the projection is done onto the first two principal components. To plot other principal components, you need to specify the values of *i* and *j*.
 
 ```R
-plot(test1,option="scores", i=3, j=4, pop=poplist.names)
+plot(test1,option="scores", i=1, j=4, pop=poplist.names)
 ```
 
 
@@ -193,17 +188,28 @@ get.pc(test1,signif)
 ```
 
 We can look at the distribution of the allele types on the PCA plot associated with this high scoring SNP.
-For example the first SNP (position 10715 among the SNPs – note, not position in the genome) correlates with PC2. So we might hope to see some difference in the distribution of genotypes for this SNP in the PCA plot.
+For example the first SNP (position 3981 among the SNPs – note, not position in the genome) correlates with PC4. So we might hope to see some difference in the distribution of genotypes for this SNP in the PCA plot.
 
-We can look at this from the raw pca data kept in the ``test1`` object, and the genotype info we have stored in raw.data:
+We can look at this from the raw PCA data kept in the ``test1`` object, and the genotype info we have stored in raw.data:
 ```R
-plot(test1$scores[,1],test1$scores[,2],col=raw.data[,10715]+1,pch=16)
+plot(test1$scores[,1],test1$scores[,4],col=raw.data[,3981]+1,pch=16)
 ```
-We can then further investigate the details of this SNP using genebank. To do this, use a web browser to navigate to genebank, and then navigate to the dog genome (CanFam3.1), then search for the SNP position for the appropriate chromosome.
+
+For comparison we have 
+```R
+plot(test1,option="scores", i=1, j=4, pop=poplist.names)
+```
+as before:
+
+You can see that this SNP seems to be strongly differentiated between the High Arctic population and the others. In this coding,  black signifies the 00 homozygote, red signifies the 01 heterozygote, and green signifies the 11 homozygote. The distribution of genotypes within the areas seems broadly consistent with Hardy-Weinberg equilibrium.
+
+We can then further investigate the details of this SNP using the NCBI genome browser. To do this, use a web browser to navigate to NCBI, and then navigate to the dog genome (CanFam3.1), then search for the SNP position for the appropriate chromosome.
 
 [Dog genome (CanFam3.1)](https://www.ncbi.nlm.nih.gov/genome/gdv/browser/?context=genome&acc=GCF_000002285.3)
 
 The link above will take you directly to the genome of the dog. Choose the chromosome you want, and then search for the nucleotide you want in the search window, and then find nearby genes.
+
+For example:
 
 
 
