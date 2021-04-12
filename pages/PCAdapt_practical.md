@@ -36,7 +36,7 @@ Load  **plink1.9**
  module load apps/plink/1.90
 ```
 
-TODO: By default **plink1.9** reads 23 pairs of chromosomes. However, wolves have 76 autosomes arraged in 38 pairs. We need to use the option `--allow-extra-chr` and set the chromosome number to 38.
+By default **plink1.9** reads 22 pairs of autosomes. However, wolves have 76 autosomes arraged in 38 pairs. We need to use the option `--allow-extra-chr` and set the chromosome number to 38.
 
 ```sh
 plink --vcf wolf.vcf --allow-extra-chr --chr-set 38 --make-bed --out wolf
@@ -83,6 +83,7 @@ A tutorial for running **pcadapt** is to be found  [here](https://bcm-uga.github
 ```R
 vignette(“pcadapt”)
 ```
+We will discuss this vignette in some detail because it is important for understanding some of the instructions below.
 <br/>
 
 Then do the following:
@@ -92,25 +93,15 @@ fname <- read.pcadapt("wolf.bed",type="bed")
 ```
 You should read in 107 individuals and 13092 SNPs.
 
-
-TODOAdditionally, this function makes a new file in your current folder called ``positions.txt``, which has the nucleotide position of each SNP that is kept (i.e. 13092 positions in this example).
-TODO: CHECK if this file is still created when using bed files
-
-TODORead this file in:
-
-```R
-pcadapt.position <- scan("positions.txt")
-```
 >
 ----------------------------------------------------------
-**NOTE**
 
-Unfortunately, if you are interested in the identity of particular SNPs, this is not very informative because it throws out chromosome or scaffold information that is useful for consulting genebank or ensembl genome browser.
 
+If you are interested in the identity of particular SNPs the `wolf.bim` file has chromosome or scaffold information that is useful for consulting genebank or the ensembl genome browser.
 
 <br/>
 
-The `wolf.bim` file has all this information. You can read it in **R**
+ You can read the `wolf.bim` file  in **R**
 
 ```R
 position.details = read.table("wolf.bim")
@@ -178,7 +169,7 @@ Then this gives a PCA plot with population information:
 plot(test1,option="scores",pop=poplist.names)
 ```
 
-By default, the projection is done onto the first two principal components. To plot other principal components, you need to specifie the values of *i* and *j*.
+By default, the projection is done onto the first two principal components. To plot other principal components, you need to specify the values of *i* and *j*.
 
 ```R
 plot(test1,option="scores", i=3, j=4, pop=poplist.names)
