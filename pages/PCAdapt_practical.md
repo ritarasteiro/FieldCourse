@@ -36,10 +36,10 @@ Load  **plink1.9**
  module load apps/plink/1.90
 ```
 
-TODO: By default **plink1.9** reads 23 pairs of chromosomes. However, wolves have 78 chromosomes arraged in 39 pairs. We need to use the option `--allow-extra-chr` and set the chromosome number to 39.
+TODO: By default **plink1.9** reads 23 pairs of chromosomes. However, wolves have 76 autosomes arraged in 38 pairs. We need to use the option `--allow-extra-chr` and set the chromosome number to 38.
 
 ```sh
-plink --vcf wolf.vcf --allow-extra-chr --chr-set 39 --make-bed --out wolf
+plink --vcf wolf.vcf --allow-extra-chr --chr-set 38 --make-bed --out wolf
 ```
 
 You should see an output similar to this:
@@ -51,7 +51,7 @@ PLINK v1.90b6.18 64-bit (16 Jun 2020)          www.cog-genomics.org/plink/1.9/
 Logging to wolf.log.
 Options in effect:
   --allow-extra-chr
-  --chr-set 39
+  --chr-set 38
   --make-bed
   --out wolf
   --vcf wolf.vcf
@@ -68,6 +68,7 @@ Total genotyping rate is 0.993061.
 13092 variants and 107 samples pass filters and QC.
 Note: No phenotypes present.
 --make-bed to wolf.bed + wolf.bim + wolf.fam ... done.
+
 ```
 
 In the end you will have three different **plink** files (```.bed```,```.bim```, ```.fam```). Check the [plink1.9](https://www.cog-genomics.org/plink/1.9/formats) webpage for more details about the files. Finally, download these three files to your computer.
