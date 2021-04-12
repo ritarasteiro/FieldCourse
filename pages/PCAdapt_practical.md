@@ -195,14 +195,15 @@ We can look at this from the raw PCA data kept in the ``test1`` object, and the 
 plot(test1$scores[,1],test1$scores[,4],col=raw.data[,3981]+1,pch=16)
 ```
 
-<img src="..\data\project1.png">
- 
+<img src="..\data\project_selec.png"> 
 
 For comparison we have 
 ```R
 plot(test1,option="scores", i=1, j=4, pop=poplist.names)
 ```
 as before:
+
+<img src="..\data\project1.png">
 
 You can see that this SNP seems to be strongly differentiated between the High Arctic population and the others. In this coding,  black signifies the 00 homozygote, red signifies the 01 heterozygote, and green signifies the 11 homozygote. The distribution of genotypes within the areas seems broadly consistent with Hardy-Weinberg equilibrium.
 
@@ -214,7 +215,7 @@ The link above will take you directly to the genome of the dog. Choose the chrom
 
 For example:
 
-
+<img src="..\data\ncbi_pic.png">
 
 <br/>
 
