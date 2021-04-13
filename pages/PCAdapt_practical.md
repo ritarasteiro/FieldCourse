@@ -84,6 +84,18 @@ Note: No phenotypes present.
 
 In the end you will have three different **plink** files (```.bed```,```.bim```, ```.fam```). Check the [plink1.9](https://www.cog-genomics.org/plink/1.9/formats) webpage for more details about the files. Finally, download these three files to your computer.
 
+<br/>
+
+<!-- TODO Uncomment this box
+| :memo:        | Moving files from BluePebble 
+|---------------|:---------------------------|
+| *Windows OS*  |Run the UoB VPN and use WinSCP|
+| *MAC and LINUX OS* | Open a local terminal and type these scp commands:|
+| |```scp  username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt/wolf.b* ./``` |
+| |```scp  username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt/wolf.fam ./``` |
+ --> 
+
+<br/>
 
 ### Reading .bed data into pcadapt 
 Return to **R**  and load **pcadapt**:
