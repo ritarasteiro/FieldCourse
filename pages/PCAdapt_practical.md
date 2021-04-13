@@ -26,7 +26,19 @@ which gives some context. You can either download the vcf file here or use the `
  
 
 ### Convert wolf.vcf to wolf.bed
-Login to your BluePebble account. Create a folder named ``pcadapt`` in your ``$WORK`` directory. Upload the `wolf.vcf` file to your ``$WORK/pcadapt/``
+Login to your BluePebble account. Create a folder named ``pcadapt`` in your ``$WORK`` directory. Upload the `wolf.vcf` file to your ``$WORK/pcadapt/``.
+
+<br/>
+
+<!-- TODO Uncomment this box
+| :memo:        | Moving files to BluePebble 
+|---------------|:---------------------------|
+| *Windows OS*  |Run the UoB VPN and use WinSCP|
+| *MAC and LINUX OS* | Open a local terminal and type this scp command:|
+| |```scp wolf.vcf username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt``` |
+ --> 
+
+<br/>
 
 **pcadapt** no longer supports vcf files and its preferred format is ``.bed`` type files. We suggest that you use  **plink1.9** to convert the ``wolf.vcf`` to ``wolf.bed``.
 Load  **plink1.9**
