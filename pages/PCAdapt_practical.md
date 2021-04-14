@@ -39,6 +39,7 @@ Login to your BluePebble account. Create a folder named ``pcadapt`` in your ``$W
 | | (Make sure you are either logged into seis or using vpn |
 
 
+<br/>
 
 **pcadapt** no longer supports vcf files and its preferred format is ``.bed`` type files. We suggest that you use  **plink1.9** to convert the ``wolf.vcf`` to ``wolf.bed``.
 Load  **plink1.9**
