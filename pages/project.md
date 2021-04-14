@@ -36,7 +36,7 @@ plink --bfile allsamples --keep-fam pop1.txt --make-bed --out final
 
 Note that plink only works with the prefix names for the files, and then creates various suffixes. It is probably safest to make sure you transfer all  the files with the same prefix back to your computer. 
 
-Note that the number of chromosomes of the domestic pig/boar is 18 autosomes, although there is  potentially some variation  in boars. The paper uses following reference genome: SScrofa10.2. This has 18 autosomes pairs plus sex chromosomes. The map  file also  contains unplaced SNPs (chromosome 0), which do  not have map positions. The ```plink``` command at the beginning chooses only the 18 autosomes. The chip is described [here](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0006524). 
+Note that the number of chromosomes of the domestic pig/boar is 18 autosomes, although there is  potentially some variation  in boars. The paper uses the following reference genome: SScrofa10.2. This has 18 autosomes pairs plus sex chromosomes. The map  file also  contains unplaced SNPs (chromosome 0), which do  not have map positions. The ```plink``` command at the beginning chooses only the 18 autosomes. The chip is described [here](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0006524). 
 
 Remember the dataset was mapped to this version of the genome assembly:
 [SScrofa10.2](https://www.ncbi.nlm.nih.gov/genome/gdv/browser/genome/?id=GCF_000003025.5)
