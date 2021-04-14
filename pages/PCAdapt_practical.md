@@ -45,6 +45,7 @@ Login to your BluePebble account. Create a folder named ``pcadapt`` in your ``$W
 
 
 **pcadapt** no longer supports vcf files and its preferred format is ``.bed`` type files. We suggest that you use  **plink1.9** to convert the ``wolf.vcf`` to ``wolf.bed``.
+
 Load  **plink1.9** in BluePebble:
 
 ```sh
@@ -96,7 +97,7 @@ In the end you will have three different **plink** files (```.bed```,```.bim```,
 |---------------|:---------------------------|
 | *Windows OS*  |Run the UoB VPN and use WinSCP|
 | *MAC and LINUX OS* | If you are using UoB VPN, open a local terminal where you want your files to be and type this scp commands: <br/> ```scp  username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt/wolf* ./```|
-| |If you are using UoB seis, login in seis to copy your plink files from BluePebble <br/> ```scp username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt/wolf.* .``` <br/> Then, open a local terminal where you want your files to be and copy your files from seis: ```scp  username@seis.bris.ac.uk:/home/username/wolf.* ./``` |
+| |If you are using UoB seis, login in seis to copy your plink files from BluePebble <br/> ```scp username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt/wolf.* .``` <br/> Then, open a local terminal where you want your files to be and copy your files from seis: <br/> ```scp  username@seis.bris.ac.uk:/home/username/wolf.* ./``` |
 
 -----
 
