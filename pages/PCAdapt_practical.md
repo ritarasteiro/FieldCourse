@@ -35,7 +35,7 @@ Login to your BluePebble account. Create a folder named ``pcadapt`` in your ``$W
 |📝     | Moving files to BluePebble 
 |---------------|:---------------------------|
 | *Windows OS*  |Run the UoB VPN and use WinSCP|
-| *MAC and LINUX OS* | Open a local terminal and type this scp command: <br/> ```scp wolf.vcf username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt``` <br/> (Make sure you are either logged into seis or using vpn |
+| *MAC and LINUX OS* | Open a local terminal and type this scp command: <br/> ```scp wolf.vcf username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt``` <br/> (Make sure you are either logged into seis or using vpn) |
 
 -----
 <br/>
@@ -92,7 +92,7 @@ In the end you will have three different **plink** files (```.bed```,```.bim```,
 |   📝     | Moving files from BluePebble 
 |---------------|:---------------------------|
 | *Windows OS*  |Run the UoB VPN and use WinSCP|
-| *MAC and LINUX OS* | Open a local terminal and type these scp commands: <br/> ```scp  username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt/wolf.b* ./``` <br/> ```scp  username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt/wolf.fam ./``` <br/> (Make sure you are either logged into seis or using vpn |
+| *MAC and LINUX OS* | Open a local terminal and type these scp commands: <br/> ```scp  username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt/wolf.b* ./``` <br/> ```scp  username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt/wolf.fam ./``` <br/> (Make sure you are either logged into seis or using vpn) |
 
 -----
 
