@@ -27,7 +27,7 @@ SBWB  - South Balkan wild boar <br/>
 
 These have been chosen to reflect wild boar  diversity in Europe, with a sufficiently small number of populations that you can  still visually distinguish the groups in pcadapt PCA plots. You will find that Cattell's rule suggests working with K=2 or K=6.
 
-This example is provided to get you started. You are welcome to base your project purely on this subset, which may allow you to frame hypotheses about adaptive selection between wild boar populations  and/or domestication. I suggest  that you start with this anyway, to familiarise  yourself. After which you can  frame your own hypotheses and create a new subset to allow you test them for your project.
+This example is provided to get you started. You are welcome to base your project purely on this subset, which may allow you to frame hypotheses about adaptive selection between wild boar populations. I suggest  that you start with this anyway, to familiarise  yourself. After which you can  frame your own hypotheses and create a new subset to allow you test them for your project.
 
 Whatever subset you choose, you will need to use plink to trim down the  bed file. For the ```pop1.txt``` example you would use:
 ```sh
