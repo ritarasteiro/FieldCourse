@@ -31,6 +31,7 @@ Login to your BluePebble account. Create a folder named ``pcadapt`` in your ``$W
 <br/>
 
 ---
+
 |       |Moving files to BluePebble|
 |---------------|:---------------------------|
 | *Windows OS*  |Run the UoB VPN and use WinSCP|
