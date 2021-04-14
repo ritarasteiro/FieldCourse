@@ -16,18 +16,16 @@ plink --file JWM_Final --chr 1-18 --make-bed --out allsamples
 
 **However...** The dataset has a very large number of individuals sampled from different breeds and wild boar populations (look at the paper). To make it more feasible to work with, it is necessary to trim the dataset to a smaller number of populations. An example text file with the population identifiers is available [here](../data/pop1.txt). This is based on data from the following populations:  
 FIWB - Finnish wildboar <br/>
+GRWB - Greek wildboar <br/>
 HRWB - Croatian wildboar <br/>
 IBWB - Iberian wildboar <br/>
-KPWB - Korean wildboar <br/>
-LDR4 - Domestic pig landrace (China) <br/>
-LDR7 - Domestic pig landrace (Netherlands) <br/>
-NEWB - North-West European wild  boar (Netherlands and France) <br/>
-RUWB1 - Russian wild boar <br/>
-RUWB2 - Russian wild boar (East Russia) <br/>
-SBWB - South Balkan wild boar <br/>
-TNWB - Tunisian wild boar <br/>
+ITWB1 - Italian wildboar <br/>
+ITWB2 - Italian wildboar <br/>
+PLWB - Polish wildboar <br/>
+SBWB  - South Balkan wild boar <br/>
 
-These have been chosen to reflect broad pig/boar  diversity, but with a sufficiently small number of populations that you can  still visually distinguish in pcadapt PCA plots. You will  see that these  group into three clusters. You will find that Cattell's rule suggest working with K=2.
+
+TODO: These have been chosen to reflect broad pig/boar  diversity, but with a sufficiently small number of populations that you can  still visually distinguish in pcadapt PCA plots. You will  see that these  group into three clusters. You will find that Cattell's rule suggest working with K=2 or K6.
 
 This example is provided to get you started. You are welcome to base your project purely on this subset, which may allow you to frame hypotheses about adaptive selection between wild boar populations  and/or domestication. I suggest  as a start,  to familiarise yourself, that you start with this anyway. After which you can  frame your own hypotheses and create a new subset to allow you test them for your project.
 
