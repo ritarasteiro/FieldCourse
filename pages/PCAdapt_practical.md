@@ -89,14 +89,17 @@ In the end you will have three different **plink** files (```.bed```,```.bim```,
 
 <br/>
 
-<!-- TODO Uncomment this box
+-----
+
 | :memo:        | Moving files from BluePebble 
 |---------------|:---------------------------|
 | *Windows OS*  |Run the UoB VPN and use WinSCP|
 | *MAC and LINUX OS* | Open a local terminal and type these scp commands:|
 | |```scp  username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt/wolf.b* ./``` |
 | |```scp  username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt/wolf.fam ./``` |
- --> 
+| | (Make sure you are either logged into seis or using vpn |
+
+-----
 
 <br/>
 
