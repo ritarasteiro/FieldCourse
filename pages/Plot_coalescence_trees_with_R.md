@@ -31,7 +31,7 @@ Put them in your working folder for R
 
 Type:
 ```R
-source(“plot_ms_trees_single_pop.R”)
+source("plot_ms_trees_single_pop.R")
 ```
 This will import the function ```plot_ms_tree()```. This function has two parameters:
 * The number of haploid samples
