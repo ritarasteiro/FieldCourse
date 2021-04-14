@@ -31,7 +31,7 @@ This example is provided to get you started. You are welcome to base your projec
 
 Whatever subset you choose, you will need to use plink to trim down the  bed file. For the ```pop1.txt``` example you would use:
 ```sh
-plink --bfile allsamples --keep-fam pop1.txt --chr 1-18 --make-bed --out final
+plink --bfile allsamples --keep-fam pop1.txt --make-bed --out final
 ```
 
 Note that plink only works with the prefix names for the files, and then creates various suffixes. It is probably safest to make sure you transfer all  the files with the same prefix back to your computer. 
