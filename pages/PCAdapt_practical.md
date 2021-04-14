@@ -52,7 +52,7 @@ Load  **plink1.9** in BluePebble:
  module load apps/plink/1.90
 ```
 
-By default **plink1.9** reads 22 pairs of autosomes. However, wolves have 76 autosomes arraged in 38 pairs. We need to use the option `--allow-extra-chr` and set the chromosome number to 38.
+By default **plink1.9** reads 22 pairs of autosomes. However, wolves have 76 autosomes arraged in 38 pairs. We need to use the option `--allow-extra-chr` and set the chromosome number to 38. On your ``$WORK/pcadapt`` type:
 
 ```sh
 plink --vcf wolf.vcf --allow-extra-chr --chr-set 38 --make-bed --out wolf
