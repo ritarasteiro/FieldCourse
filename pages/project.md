@@ -43,7 +43,7 @@ Note that the number of chromosomes of the domestic pig/boar is 18 autosomes, al
 Remember the dataset was mapped to this version of the genome assembly:
 [SScrofa10.2](https://www.ncbi.nlm.nih.gov/genome/gdv/browser/genome/?id=GCF_000003025.5)
 
-(You can also look at [SScrofa10.2](https://may2017.archive.ensembl.org/Sus_scrofa/Info/Index) if you are interested.)
+(You can also look at Ensemble version of [SScrofa10.2](https://may2017.archive.ensembl.org/Sus_scrofa/Info/Index) if you are interested.)
 
 
 ## Aims for the Project
