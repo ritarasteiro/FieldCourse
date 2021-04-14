@@ -35,9 +35,9 @@ Login to your BluePebble account. Create a folder named ``pcadapt`` in your ``$W
 |        | Moving files to BluePebble 
 |---------------|:---------------------------|
 | *Windows OS*  |Run the UoB VPN and use WinSCP|
-| *MAC and LINUX OS* | Open a local terminal and type this scp command:\
+| *MAC and LINUX OS* | Open a local terminal and type this scp command: \
 | |```scp wolf.vcf username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt``` \
-| | (Make sure you are either logged into seis or using vpn |
+| | (Make sure you are either logged into seis or using vpn 
 
 -----
 <br/>
