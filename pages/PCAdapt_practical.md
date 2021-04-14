@@ -38,7 +38,7 @@ Login to your BluePebble account. Create a folder named ``pcadapt`` in your ``$W
 | *MAC and LINUX OS* | If you are using UoB VPN, open a local terminal on the directory where your wolf.vcf is and type this scp command: <br/> ```scp wolf.vcf username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt``` |
 | | If you are using UoB seis, open a local terminal on the directory where your wolf.vcf is and type this scp command: <br/> ```scp wolf.vcf username@seis.bris.ac.uk:/home/username/``` <br/> Then log in seis to copy the files from seis to BluePebble  <br/> ```scp wolf.vcf username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt```|
 
- ⚠️ Be sure that you created  a folder named ``pcadapt`` in your  BluePebble ``$WORK`` before moving files.
+ ⚠️ Be sure that you created  a folder named ``pcadapt`` on your  BluePebble ``$WORK`` before moving files.
  
  -----
 <br/>
