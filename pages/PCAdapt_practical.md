@@ -31,15 +31,16 @@ Login to your BluePebble account. Create a folder named ``pcadapt`` in your ``$W
 <br/>
 
 
-| :memo:        | Moving files to BluePebble 
+|        | Moving files to BluePebble 
 |---------------|:---------------------------|
 | *Windows OS*  |Run the UoB VPN and use WinSCP|
 | *MAC and LINUX OS* | Open a local terminal and type this scp command:|
 | |```scp wolf.vcf username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt``` |
 | | (Make sure you are either logged into seis or using vpn |
 
-
 <br/>
+<br/>
+
 
 **pcadapt** no longer supports vcf files and its preferred format is ``.bed`` type files. We suggest that you use  **plink1.9** to convert the ``wolf.vcf`` to ``wolf.bed``.
 Load  **plink1.9**
