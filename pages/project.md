@@ -10,22 +10,22 @@ We will be using large pig and wild boar dataset that can be found in [Dryad](ht
 
 The ```plink``` command you will need is 
 ```sh
-plink --file JWM_Final --make-bed --out allsamples
+plink --file JWM_Final --chr 1-18 --make-bed --out allsamples
 ```
 (you are free to call is something other than allsamples.) You must ensure that the ```.map``` file is in the same folder.
 
 **However...** The dataset has a very large number of individuals sampled from different breeds and wild boar populations (look at the paper). To make it more feasible to work with, it is necessary to trim the dataset to a smaller number of populations. An example text file with the population identifiers is available [here](../data/pop1.txt). This is based on data from the following populations:  
-FIWB - Finnish wildboar
-HRWB - Croatian wildboar
-IBWB - Iberian wildboar
-KPWB - Korean wildboar
-LDR4 - Domestic pig landrace (China)
-LDR7 - Domestic pig landrace (Netherlands)
-NEWB - North-West European wild  boar (Netherlands and France)
-RUWB1 - Russian wild boar
-RUWB2 - Russian wild boar (East Russia)
-SBWB - South Balkan wild boar
-TNWB - Tunisian wild boar
+FIWB - Finnish wildboar <br/>
+HRWB - Croatian wildboar <br/>
+IBWB - Iberian wildboar <br/>
+KPWB - Korean wildboar <br/>
+LDR4 - Domestic pig landrace (China) <br/>
+LDR7 - Domestic pig landrace (Netherlands) <br/>
+NEWB - North-West European wild  boar (Netherlands and France) <br/>
+RUWB1 - Russian wild boar <br/>
+RUWB2 - Russian wild boar (East Russia) <br/>
+SBWB - South Balkan wild boar <br/>
+TNWB - Tunisian wild boar <br/>
 
 These have been chosen to reflect broad pig/boar  diversity, but with a sufficiently small number of populations that you can  still visually distinguish in pcadapt PCA plots. You will  see that these  group into three clusters. You will find that Cattell's rule suggest working with K=2.
 
@@ -33,7 +33,7 @@ This example is provided to get you started. You are welcome to base your projec
 
 Whatever subset you choose, you will need to use plink to trim down the  bed file. For the ```pop1.txt``` example you would use:
 ```sh
-plink --bfile allsamples --keep-fam pop1.txt --make-bed --out final
+plink --bfile allsamples --keep-fam pop1.txt --chr 1-18 --make-bed --out final
 ```
 
 Note that plink only works with the prefix names for the files, and then creates various suffixes. It is probably safest to make sure you transfer all  the files with the same prefix back to your computer. 
