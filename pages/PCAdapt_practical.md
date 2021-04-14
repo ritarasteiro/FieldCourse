@@ -107,7 +107,7 @@ library(pcadapt)
 
 A tutorial for running **pcadapt** is to be found  [here](https://bcm-uga.github.io/pcadapt/articles/pcadapt.html) or using:
 ```R
-vignette(“pcadapt”)
+vignette(pcadapt)
 ```
 We will discuss this vignette in some detail because it is important for understanding some of the instructions below.
 <br/>
