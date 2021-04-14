@@ -35,14 +35,17 @@ Login to your BluePebble account. Create a folder named ``pcadapt`` in your ``$W
 |📝     | Moving files to BluePebble 
 |---------------|:---------------------------|
 | *Windows OS*  |Run the UoB VPN and use WinSCP|
-| *MAC and LINUX OS* | Open a local terminal and type this scp command: <br/> ```scp wolf.vcf username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt``` <br/> (Make sure you are either logged into seis or using vpn) |
+| *MAC and LINUX OS* | If you are using UoB VPN, open a local terminal on the directory where your wolf.vcf is and type this scp command: <br/> ```scp wolf.vcf username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt``` <br/> (Make sure you are either logged into seis or using vpn) |
+| | If you are using UoB seis, open a local terminal on the directory where your wolf.vcf is and type this scp command: <br/> ```scp wolf.vcf username@seis.bris.ac.uk:/home/username/``` <br/> Then log in seis to copy the files from seis to BluePebble  <br/> ```scp wolf.vcf username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt```|
 
------
+ ⚠️ Be sure that you created  a folder named ``pcadapt`` in your  BluePebble ``$WORK`` before moving files.
+ 
+ -----
 <br/>
 
 
 **pcadapt** no longer supports vcf files and its preferred format is ``.bed`` type files. We suggest that you use  **plink1.9** to convert the ``wolf.vcf`` to ``wolf.bed``.
-Load  **plink1.9**
+Load  **plink1.9** in BluePebble:
 
 ```sh
  module load apps/plink/1.90
@@ -92,7 +95,8 @@ In the end you will have three different **plink** files (```.bed```,```.bim```,
 |   📝     | Moving files from BluePebble 
 |---------------|:---------------------------|
 | *Windows OS*  |Run the UoB VPN and use WinSCP|
-| *MAC and LINUX OS* | Open a local terminal and type these scp commands: <br/> ```scp  username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt/wolf.b* ./``` <br/> ```scp  username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt/wolf.fam ./``` <br/> (Make sure you are either logged into seis or using vpn) |
+| *MAC and LINUX OS* | If you are using UoB VPN, open a local terminal where you want your files to be and type this scp commands: <br/> ```scp  username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt/wolf* ./```|
+| |If you are using UoB seis, login in seis to copy your plink files from BluePebble <br/> ```scp username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt/wolf.* .``` <br/> Then, open a local terminal where you want your files to be and copy your files from seis: ```scp  username@seis.bris.ac.uk:/home/username/wolf.* ./``` |
 
 -----
 
