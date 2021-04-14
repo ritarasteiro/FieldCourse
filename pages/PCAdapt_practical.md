@@ -30,6 +30,7 @@ Login to your BluePebble account. Create a folder named ``pcadapt`` in your ``$W
 
 <br/>
 
+-----
 
 |        | Moving files to BluePebble 
 |---------------|:---------------------------|
@@ -38,7 +39,7 @@ Login to your BluePebble account. Create a folder named ``pcadapt`` in your ``$W
 | |```scp wolf.vcf username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt``` |
 | | (Make sure you are either logged into seis or using vpn |
 
-<br/>
+-----
 <br/>
 
 
