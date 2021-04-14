@@ -12,7 +12,7 @@ The ```plink``` command you will need is
 ```sh
 plink --file JWM_Final --chr 1-18 --make-bed --out allsamples
 ```
-(you are free to call it something other than allsamples.) You must ensure that the  ```.ped``` and ```.map``` file are in the same folder.
+(you are free to call it something other than allsamples). You must ensure that the ```.ped``` and ```.map``` file are in the same folder.
 
 **However...** The dataset has a very large number of individuals sampled from different breeds and wild boar populations (look at the paper). To make it more feasible to work with, it is necessary to trim the dataset to a smaller number of populations. An example text file with the population identifiers is available [here](../data/pop1.txt). This is based on data from the following populations:  
 FIWB - Finnish wild boar <br/>
