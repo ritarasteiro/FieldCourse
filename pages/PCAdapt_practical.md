@@ -30,16 +30,14 @@ Login to your BluePebble account. Create a folder named ``pcadapt`` in your ``$W
 
 <br/>
 
----
 
-|       |Moving files to BluePebble|
+|        | Moving files to BluePebble 
 |---------------|:---------------------------|
 | *Windows OS*  |Run the UoB VPN and use WinSCP|
 | *MAC and LINUX OS* | Open a local terminal and type this scp command:|
 | |```scp wolf.vcf username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt``` |
 | | (Make sure you are either logged into seis or using vpn |
 
----
 <br/>
 <br/>
 
@@ -212,6 +210,13 @@ To look at, for example, the  SNPs with –log10 p-values > 15 :
 signif = which(-log10(test1$pvalues) > 15)
 position.details[signif,]
 ```
+
+You can type
+```R
+signif
+```
+by itself to see the position in  your list of  SNPs. For example,  the first SNP is at position 3981, whereas ``` position.details  ``` gives the 'coordinates' of the SNP (the chromosome and base position) in the genome assembly. 
+
 We can see what principal component they have the highest correlation with by:
 ```R
 get.pc(test1,signif)
