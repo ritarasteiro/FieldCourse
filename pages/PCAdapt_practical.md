@@ -87,7 +87,7 @@ Note: No phenotypes present.
 
 ```
 
-In the end you will have three different **plink** files (```.bed```,```.bim```, ```.fam```). Check the [plink1.9](https://www.cog-genomics.org/plink/1.9/formats) webpage for more details about the files. Finally, download these three files to your computer.
+In the end you will have three different **plink** files (```.bed```,```.bim```, ```.fam```). Check the [plink1.9](https://www.cog-genomics.org/plink/1.9/formats) webpage for more details about the files. Finally, download these **three** files to your computer.
 
 <br/>
 
