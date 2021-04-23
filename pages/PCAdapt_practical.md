@@ -184,8 +184,8 @@ We can plot with points coloured by population of origin.
 
 You can obtain the list of population names from the *csv* file as:
 ```R
-descript = read.csv("AllSamples_n107_EnvData_wLatLong_toUpload.csv")
-poplist.names = descript[,4] #fourth column contains the population names
+descript = read.table("wolf.fam")
+poplist.names = descript[,1] #fourth column contains the population names
 ```
 Then this gives a PCA plot with population information:
 ```R
