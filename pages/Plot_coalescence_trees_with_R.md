@@ -11,7 +11,7 @@ Decide on your working folder, start R, and navigate to this folder.
 
 If they are not installed you need to open R and
 
-1. set Cran Mirror, and choose one e.g. Bristol (but not https)
+1. set Cran Mirror, and choose one e.g. Bristol
 2. select repositories, and accept the default it suggests
 3. select packages, choose *ape* and also choose *phyclust*
 
