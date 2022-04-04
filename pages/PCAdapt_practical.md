@@ -20,7 +20,7 @@ install.packages("pcadapt")
 Then wait quite a long time while many packages get downloaded and installed.
 
 ### Two common file formats and programs in population genomics
-Genomic data is typically stored in one of two formats: **PLINK** and **vcf**. Programs can be used to interchange between the two.  These were originally text files, so can be viewed using a text editor, but there is no expectation that these should be edited manually. Typically, compressed binary versions of the text files are used. vcf files are highly structured and complex and typically end in `.vcf`. The binary variant ends with `.bcf'. PLINK files are simpler, with similar information to a vcf represented in two or three files, with endings `.ped` and `.map` for text versions and `.bed`, `.fam`, and `.bim` for compressed binary versions. The ped/bed files contain the genotype information, the fam file contains some of the information in the ped relating to phenotypes. The map file contains the location (chromosome, base position) of each variant. 
+Genomic data is typically stored in one of two formats: **PLINK** and **vcf**. Programs can be used to interchange between the two.  These were originally text files, so can be viewed using a text editor, but there is no expectation that these should be edited manually. Typically, compressed binary versions of the text files are used. vcf files are highly structured and complex and typically end in `.vcf`. The binary variant ends with `.bcf'. PLINK files are simpler, with similar information to a vcf represented in two or three files, with endings `.ped` and `.map` for text versions and `.bed`, `.fam`, and `.bim` for compressed binary versions. The ped/bed files contain the genotype information, the fam file contains some of the information in the ped relating to individuals ids and phenotypes. The map file contains the location (chromosome, base position) of each variant. 
 
 ### To obtain the wolf data from Dryad
 The vcf file we are going to work with can be found in [Dryad](https://datadryad.org/resource/doi:10.5061/dryad.c9b25)
@@ -52,7 +52,7 @@ You need to put the pathname in quotes (otherwise it will get confused by any sp
 
 For the Mac the process is similar but you will use the terminal window. In the Mac terminal the commands are unix commands (very similar to those you are using on the server). The powershell commands have some similarity to unix, but note the backslash for Windows, which should be forward-slash for unix/Mac (you will need to have the dot for both).
 
-By default **plink1.9** reads 22 pairs of autosomes. However, wolves have 76 autosomes arraged in 38 pairs. We need to use the option `--allow-extra-chr` and set the chromosome number to 38. On your ``$WORK/pcadapt`` type:
+By default **plink1.9** reads 22 pairs of autosomes. However, wolves have 76 autosomes arraged in 38 pairs. We need to use the option `--allow-extra-chr` and set the chromosome number to 38.
 
 You should see an output similar to this:
 
