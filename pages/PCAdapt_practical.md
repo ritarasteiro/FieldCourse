@@ -20,7 +20,7 @@ install.packages("pcadapt")
 Then wait quite a long time while many packages get downloaded and installed.
 
 ### Two common file formats and programs in population genomics
-Genomic data is typically stored in one of two formats: **PLINK** and **vcf**. Programs can be used to interchange between the two.  These are text files, so can be viewed using a text editor, but there is no expectation that these should be edited manually. vcf files typically end in `.vcf`. Plink files 
+Genomic data is typically stored in one of two formats: **PLINK** and **vcf**. Programs can be used to interchange between the two.  These were originally text files, so can be viewed using a text editor, but there is no expectation that these should be edited manually. Typically, compressed binary versions of the text files are used. vcf files are highly structured and complex and typically end in `.vcf`. The binary variant ends with `.bcf'. PLINK files are simpler, with similar information to a vcf represented in two or three files, with endings `.ped` and `.map` for text versions and `.bed`, `.fam`, and `.bim` for compressed binary versions. The ped/bed files contain the genotype information, the fam file contains some of the information in the ped relating to phenotypes. The map file contains the location (chromosome, base position) of each variant. 
 
 ### To obtain the wolf data from Dryad
 The vcf file we are going to work with can be found in [Dryad](https://datadryad.org/resource/doi:10.5061/dryad.c9b25)
@@ -28,31 +28,26 @@ which gives some context. You can either download the vcf file here or use the `
  
 
 ### Convert wolf.vcf to wolf.bed
-You need to use the program PLINKLogin to your BluePebble account. Create a folder named ``pcadapt`` in your ``$WORK`` directory. Upload the `wolf.vcf` file to your ``$WORK/pcadapt/``.
-
-<br/>
-
------
-
-|📝     | Moving files to BluePebble 
-|---------------|:---------------------------|
-| *Windows OS*  |Run the UoB VPN and use WinSCP|
-| *MAC and LINUX OS* | If you are using UoB VPN, open a local terminal on the directory where your wolf.vcf is and type this scp command: <br/> ```scp wolf.vcf username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt/``` |
-| | If you are using UoB seis, open a local terminal on the directory where your wolf.vcf is and type this scp command: <br/> ```scp wolf.vcf username@seis.bris.ac.uk:/home/username/``` <br/> Then log in seis to copy the files from seis to BluePebble  <br/> ```scp wolf.vcf username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt/```|
-
- ⚠️ Be sure that you created  a folder named ``pcadapt`` on your  BluePebble ``$WORK`` before moving files.
- 
- -----
-<br/>
-
-
 **pcadapt** no longer supports vcf files and its preferred format is ``.bed`` type files. We suggest that you use  **plink1.9** to convert the ``wolf.vcf`` to ``wolf.bed``.
 
-Load  **plink1.9** in BluePebble:
+### Install PLINK1.9 
+
+Go to the PLINK website: https://www.cog-genomics.org/plink/
+Download the binary file appropriate to your operating system (Windows or Mac) (make sure you choose the stable 1.9 version).
+This is in a zip folder which needs to be decompressed
+
+To run the command for PLINK you will need to copy the binary file (`plink.exe` in Windows) into you working folder, which contains a copy of the wolf data.
+In Windows you can use the powershell to run the executable. You need to make sure that you have changed folder to your working folder in powershell. An easy way to do this is to copy and paste the folder path in file explorer into the powershell windows:
 
 ```sh
- module load apps/plink/1.90
+cd "pathname"
 ```
+You need to put the pathname in quotes (otherwise it will get confused by any spaces).
+
+```sh
+.\plink --vcf wolf.vcf --allow-extra-chr --chr-set 38 --make-bed --out wolf
+```
+
 
 By default **plink1.9** reads 22 pairs of autosomes. However, wolves have 76 autosomes arraged in 38 pairs. We need to use the option `--allow-extra-chr` and set the chromosome number to 38. On your ``$WORK/pcadapt`` type:
 
