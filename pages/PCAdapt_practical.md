@@ -101,7 +101,10 @@ Then do the following:
 ```R
 fname <- read.pcadapt("wolf.bed",type="bed")
 ```
-You should read in 107 individuals and 13092 SNPs.
+You should read in 107 individuals and 13092 SNPs. You can check this by using 
+```R
+str(fname)
+```
 
 >
 ----------------------------------------------------------
