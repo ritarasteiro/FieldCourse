@@ -12,7 +12,7 @@ All the data needed for this practical can be found in [pcadapt_practicals.zip](
 
 ### To install the pcadapt package.
 
-Install **pcadapt** in **R** (These instructions are based on version 4.1.0).
+Install **pcadapt** in **R** (These instructions are based on version 4.3.3).
 
 ```R
 install.packages("pcadapt")
