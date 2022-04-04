@@ -137,7 +137,8 @@ The scree plot is obtained by
 ```R
 plot(test1,option="screeplot")
 ```
-This seems to have a bit of an elbow at 6, so let’s use 5.
+
+Up to a constant, it corresponds to the eigenvalues in decreasing order. We are going to use the Cattell’s rule to choose the optimal number of K, i.e., we will keep PCs that correspond to eigenvalues to the left of the straight line. This seems to have a bit of an elbow at 6, so let’s use 5.
 
 ```R
 test1 = pcadapt(fname,K=5)
@@ -155,6 +156,8 @@ so that
 dim(raw.data)
 [1]   107 13092
 ```
+will show that you have 107 rows (individuals) and 13092 columns (SNPs). The genotypes are coded in the ‘0’, ‘1’ or ‘2’ formats, depending on the number of copies of the non-reference allele an individual has.
+
 This gives a PCA plot:
 ```R
 plot(test1,option="scores")
@@ -166,8 +169,8 @@ We can plot with points coloured by population of origin.
 
 You can obtain the list of population names from the *csv* file as:
 ```R
-descript = read.table("wolf.fam")
-poplist.names = descript[,1] #fourth column contains the population names
+descript = read.csv("AllSamples_n107_EnvData_wLatLong_toUpload.csv")
+poplist.names = descript[,4] #fourth column contains the population names
 ```
 Then this gives a PCA plot with population information:
 ```R
@@ -236,6 +239,19 @@ For example:
 <img src="..\data\ncbi_pic.png"> 
 
 <br/>
+
+### Choosing a p-value cutoff
+
+In the example above we arbitrarily chose –log10 p-values > 15 as a cutoff.
+There are several methods to choose a cutoff more formally for outlier detection. Below is the Bonferroni correction, which is more conservative: 
+```R
+padj <- p.adjust(test1$pvalues,method="bonferroni")
+alpha <- 0.01 #significance level
+outliers <- which(padj < alpha)
+length(outliers)
+position.details[outliers,]
+get.pc(test1,outliers)
+```
 
 ### Back
 
