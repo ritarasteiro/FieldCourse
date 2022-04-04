@@ -36,27 +36,25 @@ Go to the PLINK website: https://www.cog-genomics.org/plink/
 Download the binary file appropriate to your operating system (Windows or Mac) (make sure you choose the stable 1.9 version).
 This is in a zip folder which needs to be decompressed
 
-To run the command for PLINK you will need to copy the binary file (`plink.exe` in Windows) into you working folder, which contains a copy of the wolf data.
+To run the command for PLINK you will need to copy the binary file (`plink.exe` in Windows) into you working folder, which should also contain a copy of the wolf data.
+
 In Windows you can use the powershell to run the executable. You need to make sure that you have changed folder to your working folder in powershell. An easy way to do this is to copy and paste the folder path in file explorer into the powershell windows:
 
 ```sh
 cd "pathname"
 ```
-You need to put the pathname in quotes (otherwise it will get confused by any spaces).
+You need to put the pathname in quotes (otherwise it will get confused by any spaces). Once you are in the correct folder, in Windows run:
 
 ```sh
 .\plink --vcf wolf.vcf --allow-extra-chr --chr-set 38 --make-bed --out wolf
 ```
+(Note the dot and backslash.)
 
+For the Mac the process is similar but you will use the terminal window. In the Mac terminal the commands are unix commands (very similar to those you are using on the server). The powershell commands have some similarity to unix, but note the backslash for Windows, which should be forward-slash for unix/Mac (you will need to have the dot for both).
 
 By default **plink1.9** reads 22 pairs of autosomes. However, wolves have 76 autosomes arraged in 38 pairs. We need to use the option `--allow-extra-chr` and set the chromosome number to 38. On your ``$WORK/pcadapt`` type:
 
-```sh
-plink --vcf wolf.vcf --allow-extra-chr --chr-set 38 --make-bed --out wolf
-```
-
 You should see an output similar to this:
-
 
 ```console
 PLINK v1.90b6.18 64-bit (16 Jun 2020)          www.cog-genomics.org/plink/1.9/
@@ -86,19 +84,6 @@ Note: No phenotypes present.
 
 In the end you will have three different **plink** files (```.bed```,```.bim```, ```.fam```). Check the [plink1.9](https://www.cog-genomics.org/plink/1.9/formats) webpage for more details about the files. Finally, download these **three** files to your computer.
 
-<br/>
-
------
-
-|   📝     | Moving files from BluePebble 
-|---------------|:---------------------------|
-| *Windows OS*  |Run the UoB VPN and use WinSCP|
-| *MAC and LINUX OS* | If you are using UoB VPN, open a local terminal where you want your files to be and type this scp command: <br/> ```scp  username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt/wolf* ./```|
-| |If you are using UoB seis, login in seis to copy your plink files from BluePebble <br/> ```scp username@bp1-login.acrc.bris.ac.uk:/work/username/pcadapt/wolf.* .``` <br/> Then, open a local terminal where you want your files to be and copy your files from seis: <br/> ```scp  username@seis.bris.ac.uk:/home/username/wolf.* ./``` |
-
------
-
-<br/>
 
 ### Reading .bed data into pcadapt 
 Return to **R**  and load **pcadapt**:
