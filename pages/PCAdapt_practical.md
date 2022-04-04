@@ -19,6 +19,8 @@ install.packages("pcadapt")
 ```
 Then wait quite a long time while many packages get downloaded and installed.
 
+### Two common file formats and programs in population genomics
+Genomic data is typically stored in one of two formats: **PLINK** and **vcf**. Programs can be used to interchange between the two.  These are text files, so can be viewed using a text editor, but there is no expectation that these should be edited manually. vcf files typically end in `.vcf`. Plink files 
 
 ### To obtain the wolf data from Dryad
 The vcf file we are going to work with can be found in [Dryad](https://datadryad.org/resource/doi:10.5061/dryad.c9b25)
@@ -26,7 +28,7 @@ which gives some context. You can either download the vcf file here or use the `
  
 
 ### Convert wolf.vcf to wolf.bed
-Login to your BluePebble account. Create a folder named ``pcadapt`` in your ``$WORK`` directory. Upload the `wolf.vcf` file to your ``$WORK/pcadapt/``.
+You need to use the program PLINKLogin to your BluePebble account. Create a folder named ``pcadapt`` in your ``$WORK`` directory. Upload the `wolf.vcf` file to your ``$WORK/pcadapt/``.
 
 <br/>
 
