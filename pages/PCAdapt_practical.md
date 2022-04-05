@@ -266,7 +266,7 @@ We will work only with the g:GOSt tool
 We need to give it a set of genes in the query box. 
 The easiest way to do this is to provide gene ranges. The tool knows the genomes for a number of organisms (including dog and pig), so if we provide some genome coordinates it can identify the genes within those regions. A potential problem which we will ignore is that if the g:profiler is up to date then the genome assemblies that we use may have slightly altered map positions for the nucleotides that we identify. However, it is likely that this effect is quite small, and we can carry out post-hoc checks on the genes that it identifies to see if they are in reasonable positions.
 
-To facilitate providing the ranges to the g:GOSt tool I have written a short R function that takes the significant nucleotide positions that we have identified from pcadapt and outputs a file ``gprofiler_query.txt``. 
+To facilitate providing the ranges to the g:GOSt tool I have written a short [R function](../src/R/for_gprofiler.R) that takes the significant nucleotide positions that we have identified from pcadapt and outputs a file ``gprofiler_query.txt``. 
 Look at the source code for this function to be clear about the arguments that are used, and the output.
 Because the wolves do not give particularly strong results, in this example we use the false discovery rate with a cutoff at 0.05. The argument ``focus`` specifies the range above and below the target nucleotide position. The example below is for 10,000 bases above and below. Linkage disequilibrium due to selection may not extend far beyond this, so it is probably not worthwhile to extend too far, but you could try 20,000, or go down to e.g. 1000. 
 ```R
