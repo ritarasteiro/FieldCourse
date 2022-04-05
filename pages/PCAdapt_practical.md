@@ -277,9 +277,9 @@ query = for.gprofiler(position.details[outliers,c(1,4)],focus=10000)
 ```
 You can open the file ``gprofiler_query.txt`` in a text editor and cut and paste the contents into the query box. You will also need to choose ``Dog`` for the organism (*Canis lupus familiaris*). In the case of the wolves, because the results are so weak, you need to click on  Advanced Options and choose 0.1 for the user threshold (you can also choose to tick All Results to see everything that has been found). This is the significance threshold used for displaying results (the p-values themselves are corrected for multiple comparisons).
 There are different tabs for displaying results. The Detailed Results tab gives the option of downloading in a spreadsheet. This will also give the individual genes used (and their ENSEMBL codes). 
-<!-- 
+ 
 <img src="..\data\GO_detailed_res.png"> 
--->
+
 
 **How does g:profiler work?**
 
