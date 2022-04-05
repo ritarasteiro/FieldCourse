@@ -159,7 +159,7 @@ so that
 dim(raw.data)
 [1]   107 13092
 ```
-will show that you have 107 rows (individuals) and 13092 columns (SNPs). The genotypes are coded in the ‘0’, ‘1’ or ‘2’ formats, depending on the number of copies of the non-reference allele an individual has.
+will show that you have 107 rows (individuals) and 13092 columns (SNPs). The genotypes are coded in the ‘0’, ‘1’ or ‘2’ formats, depending on the number of copies of the reference allele an individual has.
 
 This gives a PCA plot:
 ```R
