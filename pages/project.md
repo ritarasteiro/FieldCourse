@@ -6,11 +6,11 @@ title: PROJECT
 ## Looking for signatures of selection and adaptation across the pig and wild boar genome
 
 
-We will be using a large pig and wild boar dataset that can be found in [Dryad](https://datadryad.org/stash/dataset/doi:10.5061/dryad.30tk6). In addition, make sure that you follow the link that Dryad provide to the [paper](https://gsejournal.biomedcentral.com/articles/10.1186/s12711-017-0345-y) that describes this dataset. The distribution contains two different **plink** files (```.ped``` and ```.map```). These have been zipped separately. It also contains a useful excel sheet that describes the provenance of the samples (populations and GPS positions). Unzip them and put the files in the same  folder. Transfer **both** plink files together to the server (as in the practical). We will need to convert the ```.ped``` file to a ```.bed``` file. This conversion will also create some other files that will be useful.  These files potentially have all the information needed for your analyses (check the [plink1.9](https://www.cog-genomics.org/plink/1.9/formats) webpage for more details about the files).
+We will be using a large pig and wild boar dataset that can be found in [Dryad](https://datadryad.org/stash/dataset/doi:10.5061/dryad.30tk6). In addition, make sure that you follow the link that Dryad provide to the [paper](https://gsejournal.biomedcentral.com/articles/10.1186/s12711-017-0345-y) that describes this dataset. The distribution contains two different **plink** files (```.ped``` and ```.map```). These have been zipped separately. It also contains a useful excel sheet that describes the provenance of the samples (populations and GPS positions). Unzip them and put the files in the same  folder. When we use PLINK we will need to convert the ```.ped``` file to a ```.bed``` file. This conversion will also create some other files that will be useful.  These files potentially have all the information needed for your analyses (check the [plink1.9](https://www.cog-genomics.org/plink/1.9/formats) webpage for more details about the files).
 
 The ```plink``` command you will need is 
 ```sh
-plink --file JWM_Final --chr 1-18 --make-bed --out allsamples
+.\plink --file JWM_Final --chr 1-18 --make-bed --out allsamples
 ```
 (you are free to call it something other than allsamples). You must ensure that the ```.ped``` and ```.map``` files are in the same folder.
 
@@ -31,10 +31,10 @@ This example is provided to get you started. You are welcome to base your projec
 
 Whatever subset you choose, you will need to use plink to trim down the  bed file. For the ```pop1.txt``` example you would use:
 ```sh
-plink --bfile allsamples --keep-fam pop1.txt --make-bed --out final
+.\plink --bfile allsamples --keep-fam pop1.txt --make-bed --out final
 ```
 
-Note that plink only works with the prefix names for the files, and then creates various suffixes. It is probably safest to make sure you transfer all  the files with the same prefix back to your computer. 
+Note that plink only works with the prefix names for the files, and then creates various suffixes. 
 
 Note that the number of chromosomes of the domestic pig/boar is 18 autosomes, although there is  potentially some variation  in boars. The paper uses the following reference genome: SScrofa10.2. This has 18 autosomes pairs plus sex chromosomes. The map  file also  contains unplaced SNPs (chromosome 0), which do  not have map positions. The ```plink``` command at the beginning chooses only the 18 autosomes. The chip is described [here](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0006524). 
 
