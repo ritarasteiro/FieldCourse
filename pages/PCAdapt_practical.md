@@ -20,7 +20,7 @@ install.packages("pcadapt")
 Then wait quite a long time while many packages get downloaded and installed.
 
 ### Two common file formats and programs in population genomics
-Genomic data is typically stored in one of two formats: **PLINK** and **vcf**. Programs can be used to interchange between the two.  These were originally text files, so can be viewed using a text editor, but there is no expectation that these should be edited manually. Typically, compressed binary versions of the text files are used. vcf files are highly structured and complex and typically end in `.vcf`. The binary variant ends with `.bcf'. PLINK files are simpler, with similar information to a vcf represented in two or three files, with endings `.ped` and `.map` for text versions and `.bed`, `.fam`, and `.bim` for compressed binary versions. The ped/bed files contain the genotype information, the fam file contains some of the information in the ped relating to individuals ids and phenotypes. The map file contains the location (chromosome, base position) of each variant. 
+Genomic data is typically stored in one of two formats: **PLINK** and **vcf**. Programs can be used to interchange between the two.  These were originally text files, so can be viewed using a text editor, but there is no expectation that these should be edited manually. Typically, compressed binary versions of the text files are used. vcf files are highly structured and complex and typically end in `.vcf`. The binary variant ends with `.bcf`. PLINK files are simpler, with similar information to a vcf represented in two or three files, with endings `.ped` and `.map` for text versions and `.bed`, `.fam`, and `.bim` for compressed binary versions. The ped/bed files contain the genotype information, the fam file contains some of the information in the ped relating to individuals ids and phenotypes. The map file contains the location (chromosome, base position) of each variant. 
 
 ### To obtain the wolf data from Dryad
 The vcf file we are going to work with can be found in [Dryad](https://datadryad.org/resource/doi:10.5061/dryad.c9b25)
@@ -196,19 +196,19 @@ plot(test1,option="manhattan")
 
 To look at, for example, the  SNPs with –log10 p-values > 15 :
 ```R
-signif = which(-log10(test1$pvalues) > 15)
-position.details[signif,]
+outliers = which(-log10(test1$pvalues) > 15)
+position.details[outliers,]
 ```
 
 You can type
 ```R
-signif
+outliers
 ```
 by itself to see the position in  your list of  SNPs. For example,  the first SNP is at position 3981, whereas ``` position.details  ``` gives the 'coordinates' of the SNP (the chromosome and base position) in the genome assembly. 
 
 We can see what principal component they have the highest correlation with by:
 ```R
-get.pc(test1,signif)
+get.pc(test1,outliers)
 ```
 
 We can look at the distribution of the allele types on the PCA plot associated with high scoring SNPs.
