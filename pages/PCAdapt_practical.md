@@ -229,7 +229,7 @@ plot(test1$scores[,1],test1$scores[,4],col=raw.data[,3981]+1,pch=16)
 
 <img src="..\data\project_selec.png"> 
 
-You can see that this SNP seems to be strongly differentiated between the High Arctic population and the others. In this coding,  black signifies the 00 homozygote, red signifies the 01 heterozygote, and green signifies the 11 homozygote. The distribution of genotypes within the areas seems broadly consistent with Hardy-Weinberg equilibrium.
+You can see that this SNP seems to be strongly differentiated between the High Arctic population and the others. In this coding,  black signifies the (minor,minor) homozygote, red signifies the (minor,major) heterozygote, and green signifies the (major,major) homozygote. The distribution of genotypes within the areas seems broadly consistent with Hardy-Weinberg equilibrium.
 
 We can then further investigate the details of this SNP using the NCBI genome browser. To do this, use a web browser to navigate to NCBI, and then navigate to the dog genome (CanFam3.1), then search for the SNP position for the appropriate chromosome.
 
@@ -260,14 +260,16 @@ get.pc(test1,outliers)
 
 A further method for finding functional roles for the genes that we identify is to make use of the gene ontology information associated with the genes. As you will find in this practical, this approach is not particularly helpful for the wolf data. However it may be useful for your project on wild boar and pigs. 
 
-The g:profiler website contains a number of tools for determining the functional relevance of a collection of genes. The paper describing the site in more detail is given [here](https://doi.org/10.1093/nar/gkz369).
+The g:profiler website contains a number of tools for determining the functional relevance of a collection of genes:https://biit.cs.ut.ee/gprofiler/gost
+
+The paper describing the site in more detail is given [here](https://doi.org/10.1093/nar/gkz369).
 
 We will work only with the g:GOSt tool
 We need to give it a set of genes in the query box. 
 The easiest way to do this is to provide gene ranges. The tool knows the genomes for a number of organisms (including dog and pig), so if we provide some genome coordinates it can identify the genes within those regions. A potential problem which we will ignore is that if the g:profiler is up to date then the genome assemblies that we use may have slightly altered map positions for the nucleotides that we identify. However, it is likely that this effect is quite small, and we can carry out post-hoc checks on the genes that it identifies to see if they are in reasonable positions.
 
 To facilitate providing the ranges to the g:GOSt tool I have written a short [R function](../src/R/for_gprofiler.R) that takes the significant nucleotide positions that we have identified from pcadapt and outputs a file ``gprofiler_query.txt``. 
-Look at the source code for this function to be clear about the arguments that are used, and the output.
+Look at the source code for this function to be clear about the arguments that are used, and the output. You will need to download the function into your working folder and ```source``` it.
 Because the wolves do not give particularly strong results, in this example we use the false discovery rate with a cutoff at 0.05. The argument ``focus`` specifies the range above and below the target nucleotide position. The example below is for 10,000 bases above and below. Linkage disequilibrium due to selection may not extend far beyond this, so it is probably not worthwhile to extend too far, but you could try 20,000, or go down to e.g. 1000. 
 ```R
 alpha = 0.05
