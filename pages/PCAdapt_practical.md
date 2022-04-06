@@ -260,13 +260,13 @@ get.pc(test1,outliers)
 
 A further method for finding functional roles for the genes that we identify is to make use of the gene ontology information associated with the genes. As you will find in this practical, this approach is not particularly helpful for the wolf data. However it may be useful for your project on wild boar and pigs. 
 
-The g:profiler website contains a number of tools for determining the functional relevance of a collection of genes:https://biit.cs.ut.ee/gprofiler/gost
+The [g:profiler website](https://biit.cs.ut.ee/gprofiler/gost) contains a number of tools for determining the functional relevance of a collection of genes. The paper describing the site in more detail is given [here](https://doi.org/10.1093/nar/gkz369).
 
-The paper describing the site in more detail is given [here](https://doi.org/10.1093/nar/gkz369).
+We will work only with the g:GOSt tool. 
 
-We will work only with the g:GOSt tool
-We need to give it a set of genes in the query box. 
-The easiest way to do this is to provide gene ranges. The tool knows the genomes for a number of organisms (including dog and pig), so if we provide some genome coordinates it can identify the genes within those regions. A potential problem which we will ignore is that if the g:profiler is up to date then the genome assemblies that we use may have slightly altered map positions for the nucleotides that we identify. However, it is likely that this effect is quite small, and we can carry out post-hoc checks on the genes that it identifies to see if they are in reasonable positions.
+First, we need to give it a set of genes in the query box. The easiest way to do this is to provide gene ranges. The tool knows the genomes for a number of organisms (including dog and pig), so if we provide some genome coordinates it can identify the genes within those regions. 
+
+*NOTE:* A potential problem which we will ignore is that if the g:profiler is up to date then the genome assemblies that we use may have slightly altered map positions for the nucleotides that we identify. However, it is likely that this effect is quite small, and we can carry out post-hoc checks on the genes that it identifies to see if they are in reasonable positions.
 
 To facilitate providing the ranges to the g:GOSt tool I have written a short [R function](../src/R/for_gprofiler.R) that takes the significant nucleotide positions that we have identified from pcadapt and outputs a file ``gprofiler_query.txt``. 
 Look at the source code for this function to be clear about the arguments that are used, and the output. You will need to download the function into your working folder and ```source``` it.
