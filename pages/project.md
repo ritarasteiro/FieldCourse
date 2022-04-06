@@ -36,6 +36,8 @@ Whatever subset you choose, you will need to use plink to trim down the  bed fil
 
 Note that plink only works with the prefix names for the files, and then creates various suffixes. 
 
+An important file is the ```.fam``` file. The first column contains the population associated with each of your individuals in the selected data. It is important to use this file, rather than the excel list, for illustrating the populations in your pca plots and analyses. By all means use the excel to choose your populations; however note that the excel file is slightly disordered for some populations and you may end up mislabelling individuals in the plots.
+
 Note that the number of chromosomes of the domestic pig/boar is 18 autosomes, although there is  potentially some variation  in boars. The paper uses the following reference genome: SScrofa10.2. This has 18 autosomes pairs plus sex chromosomes. The map  file also  contains unplaced SNPs (chromosome 0), which do  not have map positions. The ```plink``` command at the beginning chooses only the 18 autosomes. The chip is described [here](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0006524). 
 
 Remember the dataset was mapped to this version of the genome assembly:
